@@ -12,6 +12,9 @@ import math
 import tf2_ros
 import tf2_geometry_msgs
 
+from OB_robotics_interface.msg import Performance_data
+from OB_robotics_interface.msg import Robot_Model_Interface
+from OB_robotics_interface.msg import Optimization_data
 #import rospy
 
 
@@ -51,6 +54,7 @@ class Objective_node(Node):
         Performance.timestamp -> int?
         Performance.model_values -> list of float32
         Performance.robot_state -> list of float32
+        Processed_data.episode_end -> bool
         """
         self.model_performance=msg
 
@@ -62,10 +66,9 @@ class Objective_node(Node):
     
     def timer_callback(self):
         """
-        Processed_data structure
+        Optimization structure
         Processed_data.timestamp -> int?
-        Processed_data.topic -> string
-        Processed_data.values -> float32
+        Processed_data.loss -> float32
         Processed_data.episode_end -> bool
         """
         Performance=Performance_data()

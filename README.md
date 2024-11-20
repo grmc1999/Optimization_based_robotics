@@ -2,9 +2,31 @@
 
 # Messages
 
+Performance structure
+    builtin_interfaces/Time stamp
+    Performance.model_values -> list of float32
+    Performance.robot_state -> list of float32
+    Processed_data.episode_end -> bool
+
+Robot_Model_Interface structure
+    builtin_interfaces/Time stamp
+    Performance.data -> list of float32
+
+Model_processed_data structure
+    Processed_data.timestamp -> int?
+    Processed_data.values -> list
+
+Optimization structure
+    Processed_data.timestamp -> int?
+    Processed_data.loss -> float32
+    Processed_data.episode_end -> bools
+
 - [ ] Create optimization messages
     - define symbolic or data based
     - algorithm type
+
+- [ ] For Optimization node
+    -[ ] a service should be defined for model update
 
 
 ## Model node

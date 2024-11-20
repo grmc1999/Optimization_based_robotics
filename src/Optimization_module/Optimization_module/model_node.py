@@ -1,16 +1,10 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
-from geometry_msgs.msg import Twist,Pose2D,TwistStamped,PointStamped
-from turtlesim.msg import Pose
-from nav_msgs.msg import Odometry
-from tf_transformations import euler_from_quaternion
-import angles
-import numpy as np
-import math
-import tf2_ros
-import tf2_geometry_msgs
+
+from OB_robotics_interface.msg import Performance_data
+from OB_robotics_interface.msg import Robot_Model_Interface
+from OB_robotics_interface.msg import Optimization_data
 
 #import rospy
 
@@ -51,18 +45,18 @@ class Model_node(Node):
 
         # Environment interface
         self.input_subscription = self.create_subscription(
-            Processed_data,'model_input', # TODO: Check if this topic is remaped
-            self.get_input,10)
+            Robot_Model_Interface,'model_input', # TODO: Check if this topic is remaped
+            self.get_env_input,10)
         
         self.command_publisher = self.create_publisher(
-            Processed_data,
-		    'model_command',
+            Robot_Model_Interface,
+		    'model_command', 
 		    10)
         
         # Optimization interface
         self.loss_subscription = self.create_subscription(
             Optimization_data,'optimization_input', # TODO: Check if this topic is remaped
-            self.get_input,10)
+            self.get_optimization_input,10)
         
         self.model_output_publisher = self.create_publisher(
             Performance_data,
@@ -75,7 +69,7 @@ class Model_node(Node):
 
         
 
-    def get_input(self,msg):
+    def get_optimization_input(self,msg):
         """
         loss structure
         loss.timestamp -> int?
@@ -85,6 +79,15 @@ class Model_node(Node):
         self.input=msg
         if len(self.data_batch)<self.batch_size:
             self.data_batch.append(self.input.value)
+    
+    def get_env_input(self,msg):
+        """
+        loss structure
+        loss.timestamp -> int?
+        loss.value -> float32
+        """
+        self.model_mode()
+        self.env_input=msg
 
     def model_mode(self):
         self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
@@ -92,6 +95,7 @@ class Model_node(Node):
         self.batch_size=str(self.get_parameter('batch_size').get_parameter_value().integer)
 
     def update_function(self,model,data_batch):
+        return model
 
     def timer_callback(self):
         """
@@ -99,19 +103,18 @@ class Model_node(Node):
         Performance.timestamp -> int?
         Performance.model_values -> list of float32
         Performance.robot_state -> list of float32
-
-        Processed_data structure
-        Processed_data.timestamp -> int?
-        Processed_data.topic -> string
-        Processed_data.values -> float32
         Processed_data.episode_end -> bool
+
+        Model_processed_data structure
+        Processed_data.timestamp -> 
+        Processed_data.values -> list
         """
         self.model_mode()
 
         model_out=getattr(self.model,self.model_mode)(self.input)
 
-        model_output=Model_processed_data()
-        model_output.topic="model_debug"
+        model_output=Robot_Model_Interface()
+        model_output.timestamp="model_debug"
         model_output.values=model_out
 
         Performance=Performance_data()
@@ -127,6 +130,8 @@ class Model_node(Node):
         if len(self.data_batch)<self.batch_size: # TODO add or end of episode
             #run model update
             self.update_function(self.model,self.data_batch)
+        
+        self.command_publisher.publish(model_output)
 
 
 def main(args=None):

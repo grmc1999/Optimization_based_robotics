@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "model_node = Optimization_module.model_node:main",
         ],
     },
 )

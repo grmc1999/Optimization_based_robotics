@@ -12,6 +12,10 @@ import math
 import tf2_ros
 import tf2_geometry_msgs
 
+from OB_robotics_interface.msg import Performance_data
+from OB_robotics_interface.msg import Robot_Model_Interface
+from OB_robotics_interface.msg import Optimization_data
+
 #import rospy
 
 
@@ -34,12 +38,12 @@ class robot_interface_node(Node):
 
         # Environment interface
         self.input_publisher = self.create_publisher(
-            Processed_data,'model_input',
+            Robot_Model_Interface,'model_input',
             10)
         
         # Optimization interface
         self.topic_subscription = self.create_subscription(
-            topic_type,'topic', # This subscription has to be set for every type of problem
+            Robot_Model_Interface,'topic', # This subscription has to be set for every type of problem
             self.get_input,10)
         
         timer_period = 0.1  # seconds
@@ -52,15 +56,15 @@ class robot_interface_node(Node):
         """
         data parsing and other stuff
         """
-        model_output=Processed_data()
+        # Transform model output for ros format
+        model_input=Robot_Model_Interface()
+        model_input.timestamp="model_debug"
+        model_input.values=self.input
 
-
-
-        model_out=getattr(self.model,self.model_mode)(self.input)
-        model_output.output_data=model_out
-        if self.model_mode!="deploy":
-            # Send information related to performance
-            self.model_output_publisher.publish(Performance)
+        #model_out=getattr(self.model,self.model_mode)(self.input)
+        #model_output.output_data=model_out
+        #if self.model_mode!="deploy":
+        self.input_publisher.publish(model_input)
 
 def main(args=None):
     rclpy.init(args=args)
