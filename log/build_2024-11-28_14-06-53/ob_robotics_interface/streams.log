@@ -1,0 +1,334 @@
+[0.251s] Invoking command in '/home/lci/Documents/pj_ws/build/ob_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lci/Documents/pj_ws/src/OB_robotics_interface -DCMAKE_INSTALL_PREFIX=/home/lci/Documents/pj_ws/install/ob_robotics_interface
+[3.055s] -- The C compiler identification is GNU 13.2.0
+[4.642s] -- The CXX compiler identification is GNU 13.2.0
+[4.740s] -- Detecting C compiler ABI info
+[5.040s] -- Detecting C compiler ABI info - done
+[5.051s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.052s] -- Detecting C compile features
+[5.052s] -- Detecting C compile features - done
+[5.064s] -- Detecting CXX compiler ABI info
+[5.199s] -- Detecting CXX compiler ABI info - done
+[5.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.211s] -- Detecting CXX compile features
+[5.211s] -- Detecting CXX compile features - done
+[5.562s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.777s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[6.002s] -- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[6.154s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.197s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.269s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.313s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.354s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[6.400s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[7.087s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[7.857s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.175s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[8.324s] -- Found PythonExtra: /usr/bin/python3  
+[8.955s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[9.008s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[9.194s] -- Added test 'lint_cmake' to check CMake code style
+[9.201s] -- Added test 'xmllint' to check XML markup files
+[9.211s] -- Configuring done (8.9s)
+[9.367s] -- Generating done (0.1s)
+[9.370s] -- Build files have been written to: /home/lci/Documents/pj_ws/build/ob_robotics_interface
+[9.377s] Invoked command in '/home/lci/Documents/pj_ws/build/ob_robotics_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/lci/Documents/pj_ws/src/OB_robotics_interface -DCMAKE_INSTALL_PREFIX=/home/lci/Documents/pj_ws/install/ob_robotics_interface
+[9.378s] Invoking command in '/home/lci/Documents/pj_ws/build/ob_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lci/Documents/pj_ws/build/ob_robotics_interface -- -j4 -l4
+[9.439s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[9.449s] [  1%] Built target ament_cmake_python_copy_ob_robotics_interface
+[9.691s] [  1%] Built target ob_robotics_interface__rosidl_generator_type_description
+[9.701s] running egg_info
+[9.702s] creating ob_robotics_interface.egg-info
+[9.704s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.720s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.728s] writing ob_robotics_interface.egg-info/PKG-INFO
+[9.728s] writing dependency_links to ob_robotics_interface.egg-info/dependency_links.txt
+[9.728s] writing top-level names to ob_robotics_interface.egg-info/top_level.txt
+[9.728s] writing manifest file 'ob_robotics_interface.egg-info/SOURCES.txt'
+[9.803s] reading manifest file 'ob_robotics_interface.egg-info/SOURCES.txt'
+[9.804s] writing manifest file 'ob_robotics_interface.egg-info/SOURCES.txt'
+[9.836s] [  4%] Built target ament_cmake_python_build_ob_robotics_interface_egg
+[10.135s] [  4%] Built target ob_robotics_interface__cpp
+[10.219s] [ 10%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/model_processed_data__description.c.o[0m
+[10.219s] [ 10%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/performance_data__description.c.o[0m
+[10.219s] [ 10%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/model_processed_data__functions.c.o[0m
+[10.220s] [ 10%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/model_processed_data__type_support.c.o[0m
+[10.410s] [ 12%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/performance_data__functions.c.o[0m
+[10.490s] [ 15%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/performance_data__type_support.c.o[0m
+[10.491s] [ 15%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/optimization_data__description.c.o[0m
+[10.509s] [ 17%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/optimization_data__functions.c.o[0m
+[10.530s] [ 18%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/optimization_data__type_support.c.o[0m
+[10.540s] [ 20%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/robot_model_interface__description.c.o[0m
+[10.551s] [ 21%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/robot_model_interface__functions.c.o[0m
+[10.566s] [ 23%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_c.dir/rosidl_generator_c/ob_robotics_interface/msg/detail/robot_model_interface__type_support.c.o[0m
+[10.611s] [ 25%] [32m[1mLinking C shared library libob_robotics_interface__rosidl_generator_c.so[0m
+[10.668s] [ 25%] Built target ob_robotics_interface__rosidl_generator_c
+[10.685s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.685s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[10.686s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[10.686s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.011s] [ 32%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ob_robotics_interface/msg/model_processed_data__type_support.cpp.o[0m
+[11.121s] [ 34%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ob_robotics_interface/msg/detail/model_processed_data__type_support.c.o[0m
+[11.175s] [ 35%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ob_robotics_interface/msg/detail/model_processed_data__type_support_c.cpp.o[0m
+[11.186s] [ 37%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ob_robotics_interface/msg/detail/dds_fastrtps/model_processed_data__type_support.cpp.o[0m
+[11.191s] [ 39%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ob_robotics_interface/msg/detail/performance_data__type_support.c.o[0m
+[11.243s] [ 40%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ob_robotics_interface/msg/detail/optimization_data__type_support.c.o[0m
+[11.288s] [ 42%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ob_robotics_interface/msg/detail/robot_model_interface__type_support.c.o[0m
+[11.333s] [ 43%] [32m[1mLinking C shared library libob_robotics_interface__rosidl_typesupport_introspection_c.so[0m
+[11.370s] [ 43%] Built target ob_robotics_interface__rosidl_typesupport_introspection_c
+[11.380s] [ 45%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ob_robotics_interface/msg/detail/dds_fastrtps/performance_data__type_support.cpp.o[0m
+[11.767s] [ 46%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ob_robotics_interface/msg/performance_data__type_support.cpp.o[0m
+[12.053s] [ 48%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ob_robotics_interface/msg/detail/performance_data__type_support_c.cpp.o[0m
+[12.073s] [ 50%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ob_robotics_interface/msg/optimization_data__type_support.cpp.o[0m
+[12.082s] [ 51%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ob_robotics_interface/msg/detail/dds_fastrtps/optimization_data__type_support.cpp.o[0m
+[12.170s] [ 53%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ob_robotics_interface/msg/detail/optimization_data__type_support_c.cpp.o[0m
+[12.475s] [ 54%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ob_robotics_interface/msg/robot_model_interface__type_support.cpp.o[0m
+[12.668s] [ 56%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ob_robotics_interface/msg/detail/robot_model_interface__type_support_c.cpp.o[0m
+[12.708s] [ 57%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ob_robotics_interface/msg/detail/dds_fastrtps/robot_model_interface__type_support.cpp.o[0m
+[12.780s] [ 59%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[12.882s] [ 60%] [32m[1mLinking CXX shared library libob_robotics_interface__rosidl_typesupport_cpp.so[0m
+[12.933s] [ 60%] Built target ob_robotics_interface__rosidl_typesupport_cpp
+[12.946s] [ 62%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.113s] [ 64%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/ob_robotics_interface/msg/model_processed_data__type_support.cpp.o[0m
+[13.166s] [ 65%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/ob_robotics_interface/msg/performance_data__type_support.cpp.o[0m
+[13.221s] [ 67%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/ob_robotics_interface/msg/optimization_data__type_support.cpp.o[0m
+[13.272s] [ 68%] [32m[1mLinking CXX shared library libob_robotics_interface__rosidl_typesupport_fastrtps_c.so[0m
+[13.276s] [ 70%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/ob_robotics_interface/msg/robot_model_interface__type_support.cpp.o[0m
+[13.333s] [ 71%] [32m[1mLinking CXX shared library libob_robotics_interface__rosidl_typesupport_c.so[0m
+[13.337s] [ 71%] Built target ob_robotics_interface__rosidl_typesupport_fastrtps_c
+[13.337s] [ 73%] [32m[1mLinking CXX shared library libob_robotics_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[13.371s] [ 76%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ob_robotics_interface/msg/detail/model_processed_data__type_support.cpp.o[0m
+[13.372s] [ 76%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ob_robotics_interface/msg/detail/performance_data__type_support.cpp.o[0m
+[13.385s] [ 76%] Built target ob_robotics_interface__rosidl_typesupport_c
+[13.398s] [ 78%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ob_robotics_interface/msg/detail/optimization_data__type_support.cpp.o[0m
+[13.431s] [ 78%] Built target ob_robotics_interface__rosidl_typesupport_fastrtps_cpp
+[13.442s] [ 79%] [32mBuilding CXX object CMakeFiles/ob_robotics_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ob_robotics_interface/msg/detail/robot_model_interface__type_support.cpp.o[0m
+[13.849s] [ 81%] [32m[1mLinking CXX shared library libob_robotics_interface__rosidl_typesupport_introspection_cpp.so[0m
+[13.933s] [ 81%] Built target ob_robotics_interface__rosidl_typesupport_introspection_cpp
+[13.958s] [ 81%] Built target ob_robotics_interface
+[13.982s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.499s] [ 82%] Built target ob_robotics_interface__py
+[14.525s] [ 89%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_py.dir/rosidl_generator_py/ob_robotics_interface/msg/_optimization_data_s.c.o[0m
+[14.525s] [ 89%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_py.dir/rosidl_generator_py/ob_robotics_interface/msg/_performance_data_s.c.o[0m
+[14.525s] [ 89%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_py.dir/rosidl_generator_py/ob_robotics_interface/msg/_model_processed_data_s.c.o[0m
+[14.525s] [ 89%] [32mBuilding C object CMakeFiles/ob_robotics_interface__rosidl_generator_py.dir/rosidl_generator_py/ob_robotics_interface/msg/_robot_model_interface_s.c.o[0m
+[14.854s] [ 90%] [32m[1mLinking C shared library libob_robotics_interface__rosidl_generator_py.so[0m
+[14.922s] [ 90%] Built target ob_robotics_interface__rosidl_generator_py
+[14.949s] [ 95%] [32mBuilding C object CMakeFiles/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.949s] [ 95%] [32mBuilding C object CMakeFiles/ob_robotics_interface_s__rosidl_typesupport_c.dir/rosidl_generator_py/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[14.950s] [ 95%] [32mBuilding C object CMakeFiles/ob_robotics_interface_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[15.088s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_c.so[0m
+[15.088s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_introspection_c.so[0m
+[15.095s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.so[0m
+[15.127s] [100%] Built target ob_robotics_interface_s__rosidl_typesupport_introspection_c
+[15.127s] [100%] Built target ob_robotics_interface_s__rosidl_typesupport_c
+[15.134s] [100%] Built target ob_robotics_interface_s__rosidl_typesupport_fastrtps_c
+[15.148s] Invoked command in '/home/lci/Documents/pj_ws/build/ob_robotics_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lci/Documents/pj_ws/build/ob_robotics_interface -- -j4 -l4
+[15.307s] Invoking command in '/home/lci/Documents/pj_ws/build/ob_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lci/Documents/pj_ws/build/ob_robotics_interface
+[15.317s] -- Install configuration: ""
+[15.317s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ament_index/resource_index/rosidl_interfaces/ob_robotics_interface
+[15.318s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/ModelProcessedData.json
+[15.318s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/PerformanceData.json
+[15.318s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/OptimizationData.json
+[15.318s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/RobotModelInterface.json
+[15.318s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/performance_data.h
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/robot_model_interface.h
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__struct.h
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__functions.h
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.c
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.h
+[15.319s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.c
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.c
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__struct.h
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__functions.c
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__description.c
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.h
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.c
+[15.320s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__functions.c
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__functions.c
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__functions.h
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.h
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__struct.h
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__functions.h
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__functions.h
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__description.c
+[15.321s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.h
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__description.c
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__functions.c
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__description.c
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__struct.h
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/model_processed_data.h
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_generator_c__visibility_control.h
+[15.322s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/optimization_data.h
+[15.323s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/library_path.sh
+[15.323s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/library_path.dsv
+[15.323s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_generator_c.so
+[15.324s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_generator_c.so" to ""
+[15.324s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface
+[15.324s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg
+[15.324s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail
+[15.324s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_fastrtps_c.h
+[15.324s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_fastrtps_c.h
+[15.324s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_fastrtps_c.h
+[15.324s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_fastrtps_c.h
+[15.325s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[15.325s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_fastrtps_c.so
+[15.325s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[15.325s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface
+[15.325s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg
+[15.325s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/model_processed_data.hpp
+[15.325s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/optimization_data.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/performance_data.hpp
+[15.326s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__traits.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__struct.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__builder.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__struct.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__builder.hpp
+[15.326s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__traits.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__struct.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__builder.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__traits.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__builder.hpp
+[15.327s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.hpp
+[15.328s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__traits.hpp
+[15.328s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__struct.hpp
+[15.328s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/robot_model_interface.hpp
+[15.328s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[15.328s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface
+[15.328s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg
+[15.329s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_fastrtps_cpp.hpp
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_fastrtps_cpp.hpp
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_fastrtps_cpp.hpp
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/dds_fastrtps
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_fastrtps_cpp.hpp
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[15.329s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_fastrtps_cpp.so
+[15.330s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[15.330s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface
+[15.330s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg
+[15.330s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail
+[15.330s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.c
+[15.330s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.c
+[15.330s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.c
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.c
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_introspection_c.h
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_introspection_c.h
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_introspection_c.h
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_introspection_c.h
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[15.331s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_introspection_c.so
+[15.332s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_introspection_c.so" to ""
+[15.332s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_c.so
+[15.332s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_c.so" to ""
+[15.333s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface
+[15.333s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg
+[15.333s] -- Up-to-date: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_introspection_cpp.hpp
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_introspection_cpp.hpp
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_introspection_cpp.hpp
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.cpp
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.cpp
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.cpp
+[15.333s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_introspection_cpp.hpp
+[15.334s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.cpp
+[15.334s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_introspection_cpp.so
+[15.334s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[15.334s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_cpp.so
+[15.335s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_cpp.so" to ""
+[15.335s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/pythonpath.sh
+[15.335s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/pythonpath.dsv
+[15.335s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info
+[15.335s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/PKG-INFO
+[15.335s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/SOURCES.txt
+[15.335s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/dependency_links.txt
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/top_level.txt
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_c.so
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.so
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_introspection_c.so
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/__init__.py
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg
+[15.336s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_performance_data_s.c
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_model_processed_data_s.c
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_robot_model_interface.py
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_model_processed_data.py
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/__init__.py
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_performance_data.py
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_optimization_data_s.c
+[15.337s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_robot_model_interface_s.c
+[15.338s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_optimization_data.py
+[15.338s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_c.c
+[15.338s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_introspection_c.c
+[15.382s] Listing '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface'...
+[15.382s] Compiling '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/__init__.py'...
+[15.382s] Listing '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg'...
+[15.383s] Compiling '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/__init__.py'...
+[15.383s] Compiling '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_model_processed_data.py'...
+[15.383s] Compiling '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_optimization_data.py'...
+[15.383s] Compiling '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_performance_data.py'...
+[15.383s] Compiling '/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_robot_model_interface.py'...
+[15.388s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.so
+[15.389s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.so" to ""
+[15.389s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_introspection_c.so
+[15.390s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_introspection_c.so" to ""
+[15.390s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_c.so
+[15.390s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_c.so" to ""
+[15.390s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_generator_py.so
+[15.391s] -- Set non-toolchain portion of runtime path of "/home/lci/Documents/pj_ws/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_generator_py.so" to ""
+[15.391s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/ModelProcessedData.idl
+[15.391s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/PerformanceData.idl
+[15.391s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/OptimizationData.idl
+[15.391s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/RobotModelInterface.idl
+[15.392s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/ModelProcessedData.msg
+[15.392s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/PerformanceData.msg
+[15.392s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/OptimizationData.msg
+[15.392s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/msg/RobotModelInterface.msg
+[15.392s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ament_index/resource_index/package_run_dependencies/ob_robotics_interface
+[15.393s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ament_index/resource_index/parent_prefix_path/ob_robotics_interface
+[15.393s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/ament_prefix_path.sh
+[15.393s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/ament_prefix_path.dsv
+[15.393s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/path.sh
+[15.393s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/environment/path.dsv
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.bash
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.sh
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.zsh
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.dsv
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/package.dsv
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ament_index/resource_index/packages/ob_robotics_interface
+[15.394s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_cExport.cmake
+[15.395s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_cExport-noconfig.cmake
+[15.395s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[15.395s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[15.395s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_cppExport.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cExport.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cExport.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cExport-noconfig.cmake
+[15.396s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cppExport.cmake
+[15.397s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[15.397s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cppExport.cmake
+[15.397s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[15.397s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_pyExport.cmake
+[15.397s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_pyExport-noconfig.cmake
+[15.398s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/rosidl_cmake-extras.cmake
+[15.398s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.398s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.398s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[15.398s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_targets-extras.cmake
+[15.398s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[15.399s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[15.399s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interfaceConfig.cmake
+[15.399s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interfaceConfig-version.cmake
+[15.399s] -- Installing: /home/lci/Documents/pj_ws/install/ob_robotics_interface/share/ob_robotics_interface/package.xml
+[15.402s] Invoked command in '/home/lci/Documents/pj_ws/build/ob_robotics_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lci/Documents/pj_ws/build/ob_robotics_interface
