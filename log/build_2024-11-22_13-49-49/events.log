@@ -1,0 +1,1000 @@
+[0.000000] (-) TimerEvent: {}
+[0.001481] (Optimization_module) JobQueued: {'identifier': 'Optimization_module', 'dependencies': OrderedDict()}
+[0.002344] (ob_robotics_interface) JobQueued: {'identifier': 'ob_robotics_interface', 'dependencies': OrderedDict()}
+[0.003341] (Optimization_module) JobStarted: {'identifier': 'Optimization_module'}
+[0.097372] (-) TimerEvent: {}
+[0.198348] (-) TimerEvent: {}
+[0.299409] (-) TimerEvent: {}
+[0.400334] (-) TimerEvent: {}
+[0.501421] (-) TimerEvent: {}
+[0.507946] (ob_robotics_interface) JobStarted: {'identifier': 'ob_robotics_interface'}
+[0.601648] (-) TimerEvent: {}
+[0.702944] (-) TimerEvent: {}
+[0.803935] (-) TimerEvent: {}
+[0.905539] (-) TimerEvent: {}
+[1.006660] (-) TimerEvent: {}
+[1.108251] (-) TimerEvent: {}
+[1.209175] (-) TimerEvent: {}
+[1.310229] (-) TimerEvent: {}
+[1.411287] (-) TimerEvent: {}
+[1.512494] (-) TimerEvent: {}
+[1.613654] (-) TimerEvent: {}
+[1.714692] (-) TimerEvent: {}
+[1.815486] (-) TimerEvent: {}
+[1.916466] (-) TimerEvent: {}
+[2.017644] (-) TimerEvent: {}
+[2.118684] (-) TimerEvent: {}
+[2.219638] (-) TimerEvent: {}
+[2.320384] (-) TimerEvent: {}
+[2.421257] (-) TimerEvent: {}
+[2.522227] (-) TimerEvent: {}
+[2.623284] (-) TimerEvent: {}
+[2.724260] (-) TimerEvent: {}
+[2.825129] (-) TimerEvent: {}
+[2.926144] (-) TimerEvent: {}
+[3.027390] (-) TimerEvent: {}
+[3.128470] (-) TimerEvent: {}
+[3.229807] (-) TimerEvent: {}
+[3.330749] (-) TimerEvent: {}
+[3.431942] (-) TimerEvent: {}
+[3.533374] (-) TimerEvent: {}
+[3.634122] (-) TimerEvent: {}
+[3.735904] (-) TimerEvent: {}
+[3.837180] (-) TimerEvent: {}
+[3.938741] (-) TimerEvent: {}
+[4.039676] (-) TimerEvent: {}
+[4.140616] (-) TimerEvent: {}
+[4.241573] (-) TimerEvent: {}
+[4.342503] (-) TimerEvent: {}
+[4.443334] (-) TimerEvent: {}
+[4.544321] (-) TimerEvent: {}
+[4.645460] (-) TimerEvent: {}
+[4.746494] (-) TimerEvent: {}
+[4.847704] (-) TimerEvent: {}
+[4.948788] (-) TimerEvent: {}
+[5.049723] (-) TimerEvent: {}
+[5.150597] (-) TimerEvent: {}
+[5.252115] (-) TimerEvent: {}
+[5.353084] (-) TimerEvent: {}
+[5.454034] (-) TimerEvent: {}
+[5.554999] (-) TimerEvent: {}
+[5.656025] (-) TimerEvent: {}
+[5.757271] (-) TimerEvent: {}
+[5.858437] (-) TimerEvent: {}
+[5.959528] (-) TimerEvent: {}
+[6.060560] (-) TimerEvent: {}
+[6.078315] (ob_robotics_interface) JobProgress: {'identifier': 'ob_robotics_interface', 'progress': 'cmake'}
+[6.112855] (ob_robotics_interface) JobProgress: {'identifier': 'ob_robotics_interface', 'progress': 'build'}
+[6.124527] (ob_robotics_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface', '--', '-j12', '-l12'], 'cwd': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'grmc1999', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{1b6a1a2b-08f2-4123-b969-e4be3a964691}', 'HOME': '/home/grmc1999', 'OLDPWD': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'grmc1999', 'NAME': 'LAPTOP-E0H966EI', 'WSL_INTEROP': '/run/WSL/572_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/PuTTY/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/grmc1/Anaconda3:/mnt/c/Users/grmc1/Anaconda3/Scripts:/mnt/c/Users/grmc1/Anaconda3/Library/usr/bin:/mnt/c/Users/grmc1/Anaconda3/Library/bin:/mnt/c/Users/grmc1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/grmc1/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe:/mnt/c/Users/grmc1/.dotnet/tools:/mnt/c/Users/grmc1/Anaconda3/lib/site-packages/openvino/libs', 'WT_SESSION': 'd968bb9b-8665-4535-b800-76818693dd6e', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface', 'PYTHONPATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[6.160853] (-) TimerEvent: {}
+[6.262194] (-) TimerEvent: {}
+[6.363403] (-) TimerEvent: {}
+[6.464304] (-) TimerEvent: {}
+[6.565954] (-) TimerEvent: {}
+[6.667143] (-) TimerEvent: {}
+[6.770041] (-) TimerEvent: {}
+[6.871446] (-) TimerEvent: {}
+[6.972645] (-) TimerEvent: {}
+[7.074538] (-) TimerEvent: {}
+[7.175853] (-) TimerEvent: {}
+[7.277974] (-) TimerEvent: {}
+[7.379307] (-) TimerEvent: {}
+[7.480428] (-) TimerEvent: {}
+[7.581148] (-) TimerEvent: {}
+[7.682233] (-) TimerEvent: {}
+[7.783308] (-) TimerEvent: {}
+[7.884372] (-) TimerEvent: {}
+[7.986691] (-) TimerEvent: {}
+[8.087749] (-) TimerEvent: {}
+[8.188871] (-) TimerEvent: {}
+[8.290098] (-) TimerEvent: {}
+[8.391129] (-) TimerEvent: {}
+[8.492342] (-) TimerEvent: {}
+[8.593345] (-) TimerEvent: {}
+[8.694579] (-) TimerEvent: {}
+[8.795868] (-) TimerEvent: {}
+[8.897069] (-) TimerEvent: {}
+[8.998180] (-) TimerEvent: {}
+[9.101862] (-) TimerEvent: {}
+[9.204216] (-) TimerEvent: {}
+[9.305453] (-) TimerEvent: {}
+[9.406669] (-) TimerEvent: {}
+[9.507804] (-) TimerEvent: {}
+[9.609034] (-) TimerEvent: {}
+[9.710358] (-) TimerEvent: {}
+[9.811611] (-) TimerEvent: {}
+[9.913073] (-) TimerEvent: {}
+[10.014472] (-) TimerEvent: {}
+[10.116042] (-) TimerEvent: {}
+[10.217072] (-) TimerEvent: {}
+[10.318476] (-) TimerEvent: {}
+[10.419879] (-) TimerEvent: {}
+[10.521258] (-) TimerEvent: {}
+[10.622174] (-) TimerEvent: {}
+[10.723229] (-) TimerEvent: {}
+[10.824599] (-) TimerEvent: {}
+[10.926033] (-) TimerEvent: {}
+[11.027298] (-) TimerEvent: {}
+[11.129675] (-) TimerEvent: {}
+[11.231712] (-) TimerEvent: {}
+[11.332861] (-) TimerEvent: {}
+[11.434820] (-) TimerEvent: {}
+[11.537111] (-) TimerEvent: {}
+[11.638605] (-) TimerEvent: {}
+[11.739779] (-) TimerEvent: {}
+[11.781720] (ob_robotics_interface) StdoutLine: {'line': b'[  1%] Built target ob_robotics_interface__rosidl_generator_type_description\n'}
+[11.840072] (-) TimerEvent: {}
+[11.941041] (-) TimerEvent: {}
+[12.043093] (-) TimerEvent: {}
+[12.144571] (-) TimerEvent: {}
+[12.246678] (-) TimerEvent: {}
+[12.348359] (-) TimerEvent: {}
+[12.449982] (-) TimerEvent: {}
+[12.551188] (-) TimerEvent: {}
+[12.652573] (-) TimerEvent: {}
+[12.756031] (-) TimerEvent: {}
+[12.857354] (-) TimerEvent: {}
+[12.959035] (-) TimerEvent: {}
+[13.061996] (-) TimerEvent: {}
+[13.163425] (-) TimerEvent: {}
+[13.264296] (-) TimerEvent: {}
+[13.386650] (-) TimerEvent: {}
+[13.488307] (-) TimerEvent: {}
+[13.590627] (-) TimerEvent: {}
+[13.691657] (-) TimerEvent: {}
+[13.793633] (-) TimerEvent: {}
+[13.895029] (-) TimerEvent: {}
+[13.996572] (-) TimerEvent: {}
+[14.097880] (-) TimerEvent: {}
+[14.199045] (-) TimerEvent: {}
+[14.300704] (-) TimerEvent: {}
+[14.402860] (-) TimerEvent: {}
+[14.476016] (ob_robotics_interface) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_ob_robotics_interface\n'}
+[14.503500] (-) TimerEvent: {}
+[14.528104] (ob_robotics_interface) StdoutLine: {'line': b'[  3%] Built target ob_robotics_interface__cpp\n'}
+[14.603730] (-) TimerEvent: {}
+[14.705121] (-) TimerEvent: {}
+[14.806425] (-) TimerEvent: {}
+[14.907759] (-) TimerEvent: {}
+[15.009057] (-) TimerEvent: {}
+[15.110013] (-) TimerEvent: {}
+[15.211301] (-) TimerEvent: {}
+[15.312877] (-) TimerEvent: {}
+[15.367459] (ob_robotics_interface) StdoutLine: {'line': b'[ 25%] Built target ob_robotics_interface__rosidl_generator_c\n'}
+[15.413115] (-) TimerEvent: {}
+[15.514730] (-) TimerEvent: {}
+[15.617848] (-) TimerEvent: {}
+[15.721118] (-) TimerEvent: {}
+[15.822791] (-) TimerEvent: {}
+[15.928432] (-) TimerEvent: {}
+[16.031757] (-) TimerEvent: {}
+[16.132902] (-) TimerEvent: {}
+[16.234129] (-) TimerEvent: {}
+[16.335563] (-) TimerEvent: {}
+[16.436759] (-) TimerEvent: {}
+[16.540265] (-) TimerEvent: {}
+[16.641795] (-) TimerEvent: {}
+[16.743180] (-) TimerEvent: {}
+[16.846236] (-) TimerEvent: {}
+[16.948380] (-) TimerEvent: {}
+[17.050114] (-) TimerEvent: {}
+[17.152452] (-) TimerEvent: {}
+[17.253728] (-) TimerEvent: {}
+[17.364028] (-) TimerEvent: {}
+[17.466010] (-) TimerEvent: {}
+[17.569389] (-) TimerEvent: {}
+[17.671133] (-) TimerEvent: {}
+[17.754587] (ob_robotics_interface) StdoutLine: {'line': b'[ 37%] Built target ob_robotics_interface__rosidl_typesupport_c\n'}
+[17.771333] (-) TimerEvent: {}
+[17.807158] (ob_robotics_interface) StdoutLine: {'line': b'[ 56%] Built target ob_robotics_interface__rosidl_typesupport_fastrtps_c\n'}
+[17.820188] (ob_robotics_interface) StdoutLine: {'line': b'[ 59%] Built target ob_robotics_interface__rosidl_typesupport_introspection_c\n'}
+[17.852882] (ob_robotics_interface) StdoutLine: {'line': b'[ 62%] Built target ob_robotics_interface__rosidl_typesupport_cpp\n'}
+[17.871571] (-) TimerEvent: {}
+[17.913822] (ob_robotics_interface) StdoutLine: {'line': b'[ 71%] Built target ob_robotics_interface__rosidl_typesupport_introspection_cpp\n'}
+[17.971750] (-) TimerEvent: {}
+[18.072693] (-) TimerEvent: {}
+[18.132686] (ob_robotics_interface) StdoutLine: {'line': b'[ 81%] Built target ob_robotics_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[18.173021] (-) TimerEvent: {}
+[18.274351] (-) TimerEvent: {}
+[18.375772] (-) TimerEvent: {}
+[18.477587] (-) TimerEvent: {}
+[18.578975] (-) TimerEvent: {}
+[18.680233] (-) TimerEvent: {}
+[18.781636] (-) TimerEvent: {}
+[18.882976] (-) TimerEvent: {}
+[18.983898] (-) TimerEvent: {}
+[19.085566] (-) TimerEvent: {}
+[19.186747] (-) TimerEvent: {}
+[19.287886] (-) TimerEvent: {}
+[19.389107] (-) TimerEvent: {}
+[19.490310] (-) TimerEvent: {}
+[19.592611] (-) TimerEvent: {}
+[19.693617] (-) TimerEvent: {}
+[19.794586] (-) TimerEvent: {}
+[19.895555] (-) TimerEvent: {}
+[19.903824] (ob_robotics_interface) StdoutLine: {'line': b'[ 81%] Built target ob_robotics_interface\n'}
+[19.995735] (-) TimerEvent: {}
+[20.097314] (-) TimerEvent: {}
+[20.198984] (-) TimerEvent: {}
+[20.300689] (-) TimerEvent: {}
+[20.401900] (-) TimerEvent: {}
+[20.506518] (-) TimerEvent: {}
+[20.607971] (-) TimerEvent: {}
+[20.709004] (-) TimerEvent: {}
+[20.810530] (-) TimerEvent: {}
+[20.839747] (Optimization_module) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/Optimization_module', 'build', '--build-base', '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/build', 'install', '--record', '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/Optimization_module', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'grmc1999', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{1b6a1a2b-08f2-4123-b969-e4be3a964691}', 'HOME': '/home/grmc1999', 'OLDPWD': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'grmc1999', 'NAME': 'LAPTOP-E0H966EI', 'WSL_INTEROP': '/run/WSL/572_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/PuTTY/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/grmc1/Anaconda3:/mnt/c/Users/grmc1/Anaconda3/Scripts:/mnt/c/Users/grmc1/Anaconda3/Library/usr/bin:/mnt/c/Users/grmc1/Anaconda3/Library/bin:/mnt/c/Users/grmc1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/grmc1/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe:/mnt/c/Users/grmc1/.dotnet/tools:/mnt/c/Users/grmc1/Anaconda3/lib/site-packages/openvino/libs', 'WT_SESSION': 'd968bb9b-8665-4535-b800-76818693dd6e', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module', 'PYTHONPATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[20.976432] (-) TimerEvent: {}
+[21.077332] (-) TimerEvent: {}
+[21.178646] (-) TimerEvent: {}
+[21.281209] (-) TimerEvent: {}
+[21.383924] (-) TimerEvent: {}
+[21.485685] (-) TimerEvent: {}
+[21.586738] (-) TimerEvent: {}
+[21.688579] (-) TimerEvent: {}
+[21.790678] (-) TimerEvent: {}
+[21.892051] (ob_robotics_interface) StdoutLine: {'line': b'[ 82%] Built target ob_robotics_interface__py\n'}
+[21.896728] (-) TimerEvent: {}
+[21.998021] (-) TimerEvent: {}
+[22.099084] (-) TimerEvent: {}
+[22.200386] (-) TimerEvent: {}
+[22.301354] (-) TimerEvent: {}
+[22.403252] (-) TimerEvent: {}
+[22.472097] (ob_robotics_interface) StdoutLine: {'line': b'running egg_info\n'}
+[22.503691] (-) TimerEvent: {}
+[22.605688] (-) TimerEvent: {}
+[22.708299] (-) TimerEvent: {}
+[22.749944] (ob_robotics_interface) StdoutLine: {'line': b'writing ob_robotics_interface.egg-info/PKG-INFO\n'}
+[22.767672] (ob_robotics_interface) StdoutLine: {'line': b'writing dependency_links to ob_robotics_interface.egg-info/dependency_links.txt\n'}
+[22.791920] (ob_robotics_interface) StdoutLine: {'line': b'writing top-level names to ob_robotics_interface.egg-info/top_level.txt\n'}
+[22.808613] (-) TimerEvent: {}
+[22.910315] (-) TimerEvent: {}
+[23.011950] (-) TimerEvent: {}
+[23.113240] (-) TimerEvent: {}
+[23.215092] (-) TimerEvent: {}
+[23.316122] (-) TimerEvent: {}
+[23.418965] (-) TimerEvent: {}
+[23.521652] (-) TimerEvent: {}
+[23.626140] (-) TimerEvent: {}
+[23.688816] (ob_robotics_interface) StdoutLine: {'line': b"reading manifest file 'ob_robotics_interface.egg-info/SOURCES.txt'\n"}
+[23.726339] (-) TimerEvent: {}
+[23.801559] (ob_robotics_interface) StdoutLine: {'line': b"writing manifest file 'ob_robotics_interface.egg-info/SOURCES.txt'\n"}
+[23.826575] (-) TimerEvent: {}
+[23.927714] (-) TimerEvent: {}
+[24.028768] (-) TimerEvent: {}
+[24.088997] (ob_robotics_interface) StdoutLine: {'line': b'[ 90%] Built target ob_robotics_interface__rosidl_generator_py\n'}
+[24.129036] (-) TimerEvent: {}
+[24.231465] (-) TimerEvent: {}
+[24.332740] (-) TimerEvent: {}
+[24.434135] (-) TimerEvent: {}
+[24.535729] (-) TimerEvent: {}
+[24.637264] (-) TimerEvent: {}
+[24.641904] (ob_robotics_interface) StdoutLine: {'line': b'[ 90%] Built target ament_cmake_python_build_ob_robotics_interface_egg\n'}
+[24.737767] (-) TimerEvent: {}
+[24.839495] (-) TimerEvent: {}
+[24.942158] (-) TimerEvent: {}
+[25.044629] (-) TimerEvent: {}
+[25.146015] (-) TimerEvent: {}
+[25.247439] (-) TimerEvent: {}
+[25.348837] (-) TimerEvent: {}
+[25.450621] (-) TimerEvent: {}
+[25.551751] (-) TimerEvent: {}
+[25.653293] (-) TimerEvent: {}
+[25.754745] (-) TimerEvent: {}
+[25.855655] (-) TimerEvent: {}
+[25.957306] (-) TimerEvent: {}
+[26.021496] (ob_robotics_interface) StdoutLine: {'line': b'[ 93%] Built target ob_robotics_interface_s__rosidl_typesupport_introspection_c\n'}
+[26.048065] (ob_robotics_interface) StdoutLine: {'line': b'[ 96%] Built target ob_robotics_interface_s__rosidl_typesupport_fastrtps_c\n'}
+[26.057643] (-) TimerEvent: {}
+[26.158718] (-) TimerEvent: {}
+[26.232382] (ob_robotics_interface) StdoutLine: {'line': b'[100%] Built target ob_robotics_interface_s__rosidl_typesupport_c\n'}
+[26.259058] (-) TimerEvent: {}
+[26.361015] (-) TimerEvent: {}
+[26.462430] (-) TimerEvent: {}
+[26.563298] (-) TimerEvent: {}
+[26.664166] (-) TimerEvent: {}
+[26.765338] (-) TimerEvent: {}
+[26.866383] (-) TimerEvent: {}
+[26.967587] (-) TimerEvent: {}
+[27.135417] (-) TimerEvent: {}
+[27.236431] (-) TimerEvent: {}
+[27.337546] (-) TimerEvent: {}
+[27.439038] (-) TimerEvent: {}
+[27.540222] (-) TimerEvent: {}
+[27.623630] (ob_robotics_interface) CommandEnded: {'returncode': 0}
+[27.640653] (-) TimerEvent: {}
+[27.743116] (-) TimerEvent: {}
+[27.844379] (-) TimerEvent: {}
+[27.956522] (-) TimerEvent: {}
+[28.058102] (-) TimerEvent: {}
+[28.162985] (-) TimerEvent: {}
+[28.264213] (-) TimerEvent: {}
+[28.366169] (-) TimerEvent: {}
+[28.467423] (-) TimerEvent: {}
+[28.568945] (-) TimerEvent: {}
+[28.670620] (-) TimerEvent: {}
+[28.772117] (-) TimerEvent: {}
+[28.873488] (-) TimerEvent: {}
+[28.975662] (-) TimerEvent: {}
+[29.076671] (-) TimerEvent: {}
+[29.177714] (-) TimerEvent: {}
+[29.276288] (Optimization_module) StdoutLine: {'line': b'running egg_info\n'}
+[29.278761] (-) TimerEvent: {}
+[29.381246] (-) TimerEvent: {}
+[29.482615] (-) TimerEvent: {}
+[29.499427] (Optimization_module) StdoutLine: {'line': b'writing ../../build/Optimization_module/Optimization_module.egg-info/PKG-INFO\n'}
+[29.515923] (Optimization_module) StdoutLine: {'line': b'writing dependency_links to ../../build/Optimization_module/Optimization_module.egg-info/dependency_links.txt\n'}
+[29.529591] (Optimization_module) StdoutLine: {'line': b'writing entry points to ../../build/Optimization_module/Optimization_module.egg-info/entry_points.txt\n'}
+[29.543917] (Optimization_module) StdoutLine: {'line': b'writing requirements to ../../build/Optimization_module/Optimization_module.egg-info/requires.txt\n'}
+[29.551811] (Optimization_module) StdoutLine: {'line': b'writing top-level names to ../../build/Optimization_module/Optimization_module.egg-info/top_level.txt\n'}
+[29.582883] (-) TimerEvent: {}
+[29.683935] (-) TimerEvent: {}
+[29.785270] (-) TimerEvent: {}
+[29.937585] (-) TimerEvent: {}
+[30.038970] (-) TimerEvent: {}
+[30.108701] (Optimization_module) StdoutLine: {'line': b"reading manifest file '../../build/Optimization_module/Optimization_module.egg-info/SOURCES.txt'\n"}
+[30.139289] (-) TimerEvent: {}
+[30.240072] (-) TimerEvent: {}
+[30.322947] (Optimization_module) StdoutLine: {'line': b"writing manifest file '../../build/Optimization_module/Optimization_module.egg-info/SOURCES.txt'\n"}
+[30.331625] (Optimization_module) StdoutLine: {'line': b'running build\n'}
+[30.334524] (Optimization_module) StdoutLine: {'line': b'running build_py\n'}
+[30.340366] (-) TimerEvent: {}
+[30.371912] (Optimization_module) StdoutLine: {'line': b'copying Optimization_module/IMU_proxy_node.py -> /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/build/lib/Optimization_module\n'}
+[30.440685] (-) TimerEvent: {}
+[30.541915] (-) TimerEvent: {}
+[30.643230] (-) TimerEvent: {}
+[30.670606] (Optimization_module) StdoutLine: {'line': b'running install\n'}
+[30.732181] (Optimization_module) StdoutLine: {'line': b'running install_lib\n'}
+[30.743423] (-) TimerEvent: {}
+[30.844840] (-) TimerEvent: {}
+[30.945999] (-) TimerEvent: {}
+[31.019609] (Optimization_module) StdoutLine: {'line': b'copying /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/build/lib/Optimization_module/IMU_proxy_node.py -> /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages/Optimization_module\n'}
+[31.046459] (-) TimerEvent: {}
+[31.147744] (-) TimerEvent: {}
+[31.248608] (-) TimerEvent: {}
+[31.349601] (-) TimerEvent: {}
+[31.451557] (-) TimerEvent: {}
+[31.506879] (Optimization_module) StdoutLine: {'line': b'byte-compiling /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages/Optimization_module/IMU_proxy_node.py to IMU_proxy_node.cpython-312.pyc\n'}
+[31.551926] (-) TimerEvent: {}
+[31.653729] (-) TimerEvent: {}
+[31.754571] (-) TimerEvent: {}
+[31.831159] (Optimization_module) StdoutLine: {'line': b'running install_data\n'}
+[31.854811] (-) TimerEvent: {}
+[31.899499] (Optimization_module) StdoutLine: {'line': b'running install_egg_info\n'}
+[31.955008] (-) TimerEvent: {}
+[32.056077] (-) TimerEvent: {}
+[32.150172] (Optimization_module) StdoutLine: {'line': b"removing '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages/Optimization_module-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[32.156315] (-) TimerEvent: {}
+[32.257684] (-) TimerEvent: {}
+[32.290289] (Optimization_module) StdoutLine: {'line': b'Copying ../../build/Optimization_module/Optimization_module.egg-info to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages/Optimization_module-0.0.0-py3.12.egg-info\n'}
+[32.357966] (-) TimerEvent: {}
+[32.459084] (-) TimerEvent: {}
+[32.560081] (-) TimerEvent: {}
+[32.661239] (-) TimerEvent: {}
+[32.762447] (-) TimerEvent: {}
+[32.863467] (-) TimerEvent: {}
+[32.872037] (Optimization_module) StdoutLine: {'line': b'running install_scripts\n'}
+[32.963666] (-) TimerEvent: {}
+[33.065067] (-) TimerEvent: {}
+[33.166384] (-) TimerEvent: {}
+[33.267752] (-) TimerEvent: {}
+[33.368801] (-) TimerEvent: {}
+[33.469696] (-) TimerEvent: {}
+[33.571239] (-) TimerEvent: {}
+[33.672252] (-) TimerEvent: {}
+[33.773212] (-) TimerEvent: {}
+[33.874091] (-) TimerEvent: {}
+[33.976256] (-) TimerEvent: {}
+[34.077551] (-) TimerEvent: {}
+[34.178817] (-) TimerEvent: {}
+[34.280040] (-) TimerEvent: {}
+[34.381021] (-) TimerEvent: {}
+[34.482645] (-) TimerEvent: {}
+[34.583577] (-) TimerEvent: {}
+[34.684540] (-) TimerEvent: {}
+[34.785620] (-) TimerEvent: {}
+[34.886439] (-) TimerEvent: {}
+[34.987601] (-) TimerEvent: {}
+[35.088795] (-) TimerEvent: {}
+[35.184778] (Optimization_module) StdoutLine: {'line': b'Installing IMU_proxy_node script to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/Optimization_module\n'}
+[35.188979] (-) TimerEvent: {}
+[35.211406] (Optimization_module) StdoutLine: {'line': b'Installing PID_model_node script to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/Optimization_module\n'}
+[35.247163] (Optimization_module) StdoutLine: {'line': b'Installing model_node script to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/Optimization_module\n'}
+[35.281917] (Optimization_module) StdoutLine: {'line': b'Installing objective_node script to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/Optimization_module\n'}
+[35.289208] (-) TimerEvent: {}
+[35.307832] (Optimization_module) StdoutLine: {'line': b'Installing proxy_node script to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/Optimization_module\n'}
+[35.336998] (Optimization_module) StdoutLine: {'line': b'Installing stability_objective_node script to /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/Optimization_module\n'}
+[35.376151] (Optimization_module) StdoutLine: {'line': b"writing list of installed files to '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/install.log'\n"}
+[35.389610] (-) TimerEvent: {}
+[35.476262] (Optimization_module) CommandEnded: {'returncode': 0}
+[35.524304] (-) TimerEvent: {}
+[35.625121] (-) TimerEvent: {}
+[35.725915] (-) TimerEvent: {}
+[35.827110] (-) TimerEvent: {}
+[35.928730] (-) TimerEvent: {}
+[36.031329] (-) TimerEvent: {}
+[36.132691] (-) TimerEvent: {}
+[36.233610] (-) TimerEvent: {}
+[36.326982] (Optimization_module) JobEnded: {'identifier': 'Optimization_module', 'rc': 0}
+[36.342905] (-) TimerEvent: {}
+[36.443900] (-) TimerEvent: {}
+[36.545233] (-) TimerEvent: {}
+[36.646272] (-) TimerEvent: {}
+[36.747186] (-) TimerEvent: {}
+[36.848133] (-) TimerEvent: {}
+[36.949095] (-) TimerEvent: {}
+[37.049969] (-) TimerEvent: {}
+[37.150971] (-) TimerEvent: {}
+[37.252243] (-) TimerEvent: {}
+[37.353285] (-) TimerEvent: {}
+[37.454124] (-) TimerEvent: {}
+[37.555128] (-) TimerEvent: {}
+[37.656150] (-) TimerEvent: {}
+[37.757109] (-) TimerEvent: {}
+[37.858067] (-) TimerEvent: {}
+[37.958958] (-) TimerEvent: {}
+[38.060128] (-) TimerEvent: {}
+[38.161036] (-) TimerEvent: {}
+[38.262004] (-) TimerEvent: {}
+[38.362855] (-) TimerEvent: {}
+[38.463772] (-) TimerEvent: {}
+[38.564580] (-) TimerEvent: {}
+[38.665780] (-) TimerEvent: {}
+[38.766545] (-) TimerEvent: {}
+[38.867383] (-) TimerEvent: {}
+[38.968265] (-) TimerEvent: {}
+[39.069580] (-) TimerEvent: {}
+[39.170643] (-) TimerEvent: {}
+[39.271651] (-) TimerEvent: {}
+[39.372484] (-) TimerEvent: {}
+[39.473299] (-) TimerEvent: {}
+[39.574308] (-) TimerEvent: {}
+[39.676116] (-) TimerEvent: {}
+[39.776941] (-) TimerEvent: {}
+[39.877997] (-) TimerEvent: {}
+[39.979050] (-) TimerEvent: {}
+[40.080289] (-) TimerEvent: {}
+[40.181358] (-) TimerEvent: {}
+[40.282331] (-) TimerEvent: {}
+[40.383931] (-) TimerEvent: {}
+[40.485549] (-) TimerEvent: {}
+[40.586690] (-) TimerEvent: {}
+[40.687931] (-) TimerEvent: {}
+[40.788894] (-) TimerEvent: {}
+[40.889827] (-) TimerEvent: {}
+[40.987481] (ob_robotics_interface) JobProgress: {'identifier': 'ob_robotics_interface', 'progress': 'install'}
+[40.990170] (-) TimerEvent: {}
+[41.091222] (-) TimerEvent: {}
+[41.192490] (-) TimerEvent: {}
+[41.293623] (-) TimerEvent: {}
+[41.394982] (-) TimerEvent: {}
+[41.495997] (-) TimerEvent: {}
+[41.597108] (-) TimerEvent: {}
+[41.662709] (ob_robotics_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface'], 'cwd': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'grmc1999', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote/lib:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{1b6a1a2b-08f2-4123-b969-e4be3a964691}', 'HOME': '/home/grmc1999', 'OLDPWD': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'grmc1999', 'NAME': 'LAPTOP-E0H966EI', 'WSL_INTEROP': '/run/WSL/572_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/PuTTY/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/grmc1/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/grmc1/Anaconda3:/mnt/c/Users/grmc1/Anaconda3/Scripts:/mnt/c/Users/grmc1/Anaconda3/Library/usr/bin:/mnt/c/Users/grmc1/Anaconda3/Library/bin:/mnt/c/Users/grmc1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/grmc1/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64:/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe:/mnt/c/Users/grmc1/.dotnet/tools:/mnt/c/Users/grmc1/Anaconda3/lib/site-packages/openvino/libs', 'WT_SESSION': 'd968bb9b-8665-4535-b800-76818693dd6e', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface', 'PYTHONPATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf/lib/python3.12/site-packages:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_msgs:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_remote_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/opt/ros/jazzy', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[41.697494] (-) TimerEvent: {}
+[41.798801] (-) TimerEvent: {}
+[41.899926] (-) TimerEvent: {}
+[42.001069] (-) TimerEvent: {}
+[42.101834] (-) TimerEvent: {}
+[42.203179] (-) TimerEvent: {}
+[42.304088] (-) TimerEvent: {}
+[42.405120] (-) TimerEvent: {}
+[42.415597] (ob_robotics_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.470310] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ament_index/resource_index/rosidl_interfaces/ob_robotics_interface\n'}
+[42.505379] (-) TimerEvent: {}
+[42.521256] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/ModelProcessedData.json\n'}
+[42.571819] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/PerformanceData.json\n'}
+[42.605570] (-) TimerEvent: {}
+[42.623980] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/OptimizationData.json\n'}
+[42.670127] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/RobotModelInterface.json\n'}
+[42.703458] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface\n'}
+[42.705757] (-) TimerEvent: {}
+[42.758268] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg\n'}
+[42.805959] (-) TimerEvent: {}
+[42.815596] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail\n'}
+[42.893254] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__description.c\n'}
+[42.906125] (-) TimerEvent: {}
+[42.948433] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__functions.c\n'}
+[43.000393] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__functions.h\n'}
+[43.006480] (-) TimerEvent: {}
+[43.063536] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__struct.h\n'}
+[43.106684] (-) TimerEvent: {}
+[43.116758] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.c\n'}
+[43.206850] (-) TimerEvent: {}
+[43.295553] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.h\n'}
+[43.307154] (-) TimerEvent: {}
+[43.346793] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__description.c\n'}
+[43.395383] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__functions.c\n'}
+[43.407439] (-) TimerEvent: {}
+[43.445476] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__functions.h\n'}
+[43.495110] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__struct.h\n'}
+[43.507729] (-) TimerEvent: {}
+[43.547092] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.c\n'}
+[43.607940] (-) TimerEvent: {}
+[43.710045] (-) TimerEvent: {}
+[43.750598] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.h\n'}
+[43.810228] (-) TimerEvent: {}
+[43.814368] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__description.c\n'}
+[43.873951] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__functions.c\n'}
+[43.910734] (-) TimerEvent: {}
+[43.925964] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__functions.h\n'}
+[43.980818] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__struct.h\n'}
+[44.011177] (-) TimerEvent: {}
+[44.033429] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.c\n'}
+[44.111411] (-) TimerEvent: {}
+[44.212427] (-) TimerEvent: {}
+[44.235219] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.h\n'}
+[44.301382] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__description.c\n'}
+[44.312657] (-) TimerEvent: {}
+[44.359655] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__functions.c\n'}
+[44.413009] (-) TimerEvent: {}
+[44.413942] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__functions.h\n'}
+[44.478736] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__struct.h\n'}
+[44.513142] (-) TimerEvent: {}
+[44.536237] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.c\n'}
+[44.613434] (-) TimerEvent: {}
+[44.714561] (-) TimerEvent: {}
+[44.749534] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.h\n'}
+[44.801962] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/model_processed_data.h\n'}
+[44.814758] (-) TimerEvent: {}
+[44.847623] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/optimization_data.h\n'}
+[44.894980] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/performance_data.h\n'}
+[44.914982] (-) TimerEvent: {}
+[44.943690] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/robot_model_interface.h\n'}
+[44.982639] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[45.011601] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/library_path.sh\n'}
+[45.015233] (-) TimerEvent: {}
+[45.055465] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/library_path.dsv\n'}
+[45.115540] (-) TimerEvent: {}
+[45.128570] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_generator_c.so\n'}
+[45.211220] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface\n'}
+[45.215687] (-) TimerEvent: {}
+[45.259203] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg\n'}
+[45.315964] (-) TimerEvent: {}
+[45.320523] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail\n'}
+[45.388252] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_fastrtps_c.h\n'}
+[45.765812] (-) TimerEvent: {}
+[45.811448] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_fastrtps_c.h\n'}
+[45.858941] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_fastrtps_c.h\n'}
+[45.866010] (-) TimerEvent: {}
+[45.907149] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_fastrtps_c.h\n'}
+[45.951577] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[45.966236] (-) TimerEvent: {}
+[46.035331] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[46.066469] (-) TimerEvent: {}
+[46.126812] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface\n'}
+[46.166747] (-) TimerEvent: {}
+[46.180871] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg\n'}
+[46.239225] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail\n'}
+[46.267214] (-) TimerEvent: {}
+[46.325727] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__builder.hpp\n'}
+[46.367429] (-) TimerEvent: {}
+[46.384302] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__struct.hpp\n'}
+[46.468356] (-) TimerEvent: {}
+[46.544206] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__traits.hpp\n'}
+[46.568415] (-) TimerEvent: {}
+[46.602652] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.hpp\n'}
+[46.653083] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__builder.hpp\n'}
+[46.668660] (-) TimerEvent: {}
+[46.708870] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__struct.hpp\n'}
+[46.766263] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__traits.hpp\n'}
+[46.768800] (-) TimerEvent: {}
+[46.815107] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.hpp\n'}
+[46.863980] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__builder.hpp\n'}
+[46.869017] (-) TimerEvent: {}
+[46.923534] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__struct.hpp\n'}
+[46.969282] (-) TimerEvent: {}
+[46.983753] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__traits.hpp\n'}
+[47.039566] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.hpp\n'}
+[47.069533] (-) TimerEvent: {}
+[47.105591] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__builder.hpp\n'}
+[47.169764] (-) TimerEvent: {}
+[47.170662] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__struct.hpp\n'}
+[47.232311] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__traits.hpp\n'}
+[47.270043] (-) TimerEvent: {}
+[47.320565] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.hpp\n'}
+[47.370406] (-) TimerEvent: {}
+[47.386916] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/model_processed_data.hpp\n'}
+[47.444881] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/optimization_data.hpp\n'}
+[47.470659] (-) TimerEvent: {}
+[47.501363] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/performance_data.hpp\n'}
+[47.554670] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/robot_model_interface.hpp\n'}
+[47.570812] (-) TimerEvent: {}
+[47.601717] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[47.641456] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface\n'}
+[47.671054] (-) TimerEvent: {}
+[47.699163] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg\n'}
+[47.764163] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail\n'}
+[47.771337] (-) TimerEvent: {}
+[47.832608] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/dds_fastrtps\n'}
+[47.871723] (-) TimerEvent: {}
+[47.907905] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[47.971900] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[47.973473] (-) TimerEvent: {}
+[48.029161] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.072639] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.074447] (-) TimerEvent: {}
+[48.114299] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[48.174780] (-) TimerEvent: {}
+[48.313249] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[48.315479] (-) TimerEvent: {}
+[48.396506] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface\n'}
+[48.415786] (-) TimerEvent: {}
+[48.445161] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg\n'}
+[48.502457] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail\n'}
+[48.515930] (-) TimerEvent: {}
+[48.577034] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_introspection_c.h\n'}
+[48.616150] (-) TimerEvent: {}
+[48.625378] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.c\n'}
+[48.716471] (-) TimerEvent: {}
+[48.817563] (-) TimerEvent: {}
+[48.901558] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_introspection_c.h\n'}
+[48.917767] (-) TimerEvent: {}
+[48.950856] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.c\n'}
+[49.018177] (-) TimerEvent: {}
+[49.118964] (-) TimerEvent: {}
+[49.219861] (-) TimerEvent: {}
+[49.292334] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_introspection_c.h\n'}
+[49.320080] (-) TimerEvent: {}
+[49.341211] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.c\n'}
+[49.420483] (-) TimerEvent: {}
+[49.521349] (-) TimerEvent: {}
+[49.530318] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_introspection_c.h\n'}
+[49.579710] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.c\n'}
+[49.621655] (-) TimerEvent: {}
+[49.722618] (-) TimerEvent: {}
+[49.776244] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[49.822772] (-) TimerEvent: {}
+[49.849545] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_introspection_c.so\n'}
+[49.923368] (-) TimerEvent: {}
+[49.970604] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_c.so\n'}
+[50.023563] (-) TimerEvent: {}
+[50.052145] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface\n'}
+[50.098830] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg\n'}
+[50.123697] (-) TimerEvent: {}
+[50.155703] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail\n'}
+[50.222344] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.223980] (-) TimerEvent: {}
+[50.273030] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/model_processed_data__type_support.cpp\n'}
+[50.322892] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.325156] (-) TimerEvent: {}
+[50.376342] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/optimization_data__type_support.cpp\n'}
+[50.425500] (-) TimerEvent: {}
+[50.427142] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.482641] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/performance_data__type_support.cpp\n'}
+[50.525673] (-) TimerEvent: {}
+[50.539777] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.591878] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/include/ob_robotics_interface/ob_robotics_interface/msg/detail/robot_model_interface__type_support.cpp\n'}
+[50.625841] (-) TimerEvent: {}
+[50.701997] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[50.726012] (-) TimerEvent: {}
+[50.826956] (-) TimerEvent: {}
+[50.846565] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_typesupport_cpp.so\n'}
+[50.927356] (-) TimerEvent: {}
+[50.933638] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/pythonpath.sh\n'}
+[50.971434] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/pythonpath.dsv\n'}
+[51.004553] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info\n'}
+[51.027506] (-) TimerEvent: {}
+[51.064726] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[51.127782] (-) TimerEvent: {}
+[51.222310] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[51.228089] (-) TimerEvent: {}
+[51.329416] (-) TimerEvent: {}
+[51.411659] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[51.429740] (-) TimerEvent: {}
+[51.530609] (-) TimerEvent: {}
+[51.595548] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[51.630934] (-) TimerEvent: {}
+[51.731813] (-) TimerEvent: {}
+[51.774683] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface\n'}
+[51.831979] (-) TimerEvent: {}
+[51.840105] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg\n'}
+[51.908205] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_model_processed_data.py\n'}
+[51.932190] (-) TimerEvent: {}
+[51.958636] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_model_processed_data_s.c\n'}
+[52.010065] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_optimization_data.py\n'}
+[52.032653] (-) TimerEvent: {}
+[52.059636] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_optimization_data_s.c\n'}
+[52.113213] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_performance_data.py\n'}
+[52.133061] (-) TimerEvent: {}
+[52.165361] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_performance_data_s.c\n'}
+[52.211478] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_robot_model_interface.py\n'}
+[52.233281] (-) TimerEvent: {}
+[52.255022] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/_robot_model_interface_s.c\n'}
+[52.299109] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg/__init__.py\n'}
+[52.333508] (-) TimerEvent: {}
+[52.347459] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_c.so\n'}
+[52.385798] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.so\n'}
+[52.428702] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_introspection_c.so\n'}
+[52.433749] (-) TimerEvent: {}
+[52.466424] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_c.c\n'}
+[52.501023] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[52.533974] (-) TimerEvent: {}
+[52.541734] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/_ob_robotics_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[52.587187] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/__init__.py\n'}
+[52.634119] (-) TimerEvent: {}
+[52.735089] (-) TimerEvent: {}
+[52.836038] (-) TimerEvent: {}
+[52.936845] (-) TimerEvent: {}
+[53.037958] (-) TimerEvent: {}
+[53.138931] (-) TimerEvent: {}
+[53.239682] (-) TimerEvent: {}
+[53.340591] (-) TimerEvent: {}
+[53.441531] (-) TimerEvent: {}
+[53.543081] (-) TimerEvent: {}
+[53.644089] (-) TimerEvent: {}
+[53.745338] (-) TimerEvent: {}
+[53.846613] (-) TimerEvent: {}
+[53.947975] (-) TimerEvent: {}
+[54.049932] (-) TimerEvent: {}
+[54.151438] (-) TimerEvent: {}
+[54.252494] (-) TimerEvent: {}
+[54.353348] (-) TimerEvent: {}
+[54.454333] (-) TimerEvent: {}
+[54.558936] (-) TimerEvent: {}
+[54.660196] (-) TimerEvent: {}
+[54.761505] (-) TimerEvent: {}
+[54.863743] (-) TimerEvent: {}
+[54.966155] (-) TimerEvent: {}
+[55.067421] (-) TimerEvent: {}
+[55.168577] (-) TimerEvent: {}
+[55.269539] (-) TimerEvent: {}
+[55.519925] (-) TimerEvent: {}
+[55.621238] (-) TimerEvent: {}
+[55.722442] (-) TimerEvent: {}
+[55.824097] (-) TimerEvent: {}
+[55.838957] (ob_robotics_interface) StdoutLine: {'line': b"Listing '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface'...\n"}
+[55.841772] (ob_robotics_interface) StdoutLine: {'line': b"Listing '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/msg'...\n"}
+[55.924362] (-) TimerEvent: {}
+[56.025432] (-) TimerEvent: {}
+[56.109229] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_fastrtps_c.so\n'}
+[56.125820] (-) TimerEvent: {}
+[56.226742] (-) TimerEvent: {}
+[56.327750] (-) TimerEvent: {}
+[56.329275] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_introspection_c.so\n'}
+[56.427955] (-) TimerEvent: {}
+[56.529113] (-) TimerEvent: {}
+[56.537370] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages/ob_robotics_interface/ob_robotics_interface_s__rosidl_typesupport_c.so\n'}
+[56.629377] (-) TimerEvent: {}
+[56.712943] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/libob_robotics_interface__rosidl_generator_py.so\n'}
+[56.729594] (-) TimerEvent: {}
+[56.817326] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/ModelProcessedData.idl\n'}
+[56.829789] (-) TimerEvent: {}
+[56.862501] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/PerformanceData.idl\n'}
+[56.908243] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/OptimizationData.idl\n'}
+[56.930116] (-) TimerEvent: {}
+[56.964018] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/RobotModelInterface.idl\n'}
+[57.015590] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/ModelProcessedData.msg\n'}
+[57.030266] (-) TimerEvent: {}
+[57.069147] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/PerformanceData.msg\n'}
+[57.119581] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/OptimizationData.msg\n'}
+[57.130613] (-) TimerEvent: {}
+[57.178567] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/msg/RobotModelInterface.msg\n'}
+[57.230895] (-) TimerEvent: {}
+[57.234730] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ament_index/resource_index/package_run_dependencies/ob_robotics_interface\n'}
+[57.298023] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ament_index/resource_index/parent_prefix_path/ob_robotics_interface\n'}
+[57.330254] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/ament_prefix_path.sh\n'}
+[57.333872] (-) TimerEvent: {}
+[57.380434] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/ament_prefix_path.dsv\n'}
+[57.415771] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/path.sh\n'}
+[57.434134] (-) TimerEvent: {}
+[57.465488] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/environment/path.dsv\n'}
+[57.522814] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.bash\n'}
+[57.534394] (-) TimerEvent: {}
+[57.582807] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.sh\n'}
+[57.624883] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.zsh\n'}
+[57.634639] (-) TimerEvent: {}
+[57.673352] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/local_setup.dsv\n'}
+[57.721978] (ob_robotics_interface) StdoutLine: {'line': b'-- Installing: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.dsv\n'}
+[57.734918] (-) TimerEvent: {}
+[57.835922] (-) TimerEvent: {}
+[57.888829] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ament_index/resource_index/packages/ob_robotics_interface\n'}
+[57.936175] (-) TimerEvent: {}
+[58.037560] (-) TimerEvent: {}
+[58.050701] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_cExport.cmake\n'}
+[58.110287] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[58.137816] (-) TimerEvent: {}
+[58.238922] (-) TimerEvent: {}
+[58.339889] (-) TimerEvent: {}
+[58.440844] (-) TimerEvent: {}
+[58.541769] (-) TimerEvent: {}
+[58.643120] (-) TimerEvent: {}
+[58.665537] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[58.721468] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[58.743454] (-) TimerEvent: {}
+[58.844128] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_cppExport.cmake\n'}
+[58.846767] (-) TimerEvent: {}
+[58.948365] (-) TimerEvent: {}
+[58.963941] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[59.015097] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[59.048616] (-) TimerEvent: {}
+[59.085329] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[59.136249] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[59.148953] (-) TimerEvent: {}
+[59.222935] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cExport.cmake\n'}
+[59.249237] (-) TimerEvent: {}
+[59.263524] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[59.339075] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[59.349575] (-) TimerEvent: {}
+[59.392756] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[59.449896] (-) TimerEvent: {}
+[59.487408] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cppExport.cmake\n'}
+[59.547373] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[59.549987] (-) TimerEvent: {}
+[59.651719] (-) TimerEvent: {}
+[59.653257] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_pyExport.cmake\n'}
+[59.703536] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/export_ob_robotics_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[59.746801] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[59.751926] (-) TimerEvent: {}
+[59.784843] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[59.824599] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[59.852143] (-) TimerEvent: {}
+[59.865888] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[59.904374] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[59.952336] (-) TimerEvent: {}
+[59.955612] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[60.000501] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[60.041985] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interfaceConfig.cmake\n'}
+[60.052695] (-) TimerEvent: {}
+[60.079268] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/cmake/ob_robotics_interfaceConfig-version.cmake\n'}
+[60.129458] (ob_robotics_interface) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.xml\n'}
+[60.152803] (-) TimerEvent: {}
+[60.202845] (ob_robotics_interface) CommandEnded: {'returncode': 0}
+[60.253034] (-) TimerEvent: {}
+[60.353952] (-) TimerEvent: {}
+[60.456023] (-) TimerEvent: {}
+[60.557302] (-) TimerEvent: {}
+[60.658326] (-) TimerEvent: {}
+[60.759195] (-) TimerEvent: {}
+[60.860032] (-) TimerEvent: {}
+[60.961171] (-) TimerEvent: {}
+[61.062847] (-) TimerEvent: {}
+[61.164368] (-) TimerEvent: {}
+[61.265546] (-) TimerEvent: {}
+[61.366527] (-) TimerEvent: {}
+[61.467758] (-) TimerEvent: {}
+[61.568635] (-) TimerEvent: {}
+[61.669770] (-) TimerEvent: {}
+[61.772971] (-) TimerEvent: {}
+[61.873920] (-) TimerEvent: {}
+[61.974879] (-) TimerEvent: {}
+[62.075650] (-) TimerEvent: {}
+[62.176898] (-) TimerEvent: {}
+[62.277716] (-) TimerEvent: {}
+[62.378592] (-) TimerEvent: {}
+[62.479589] (-) TimerEvent: {}
+[62.580851] (-) TimerEvent: {}
+[62.681863] (-) TimerEvent: {}
+[62.783231] (-) TimerEvent: {}
+[62.884207] (-) TimerEvent: {}
+[62.985279] (-) TimerEvent: {}
+[63.086345] (-) TimerEvent: {}
+[63.187245] (-) TimerEvent: {}
+[63.288345] (-) TimerEvent: {}
+[63.389368] (-) TimerEvent: {}
+[63.490376] (-) TimerEvent: {}
+[63.591163] (-) TimerEvent: {}
+[63.691995] (-) TimerEvent: {}
+[63.793167] (-) TimerEvent: {}
+[63.894045] (-) TimerEvent: {}
+[63.994970] (-) TimerEvent: {}
+[64.095821] (-) TimerEvent: {}
+[64.196721] (-) TimerEvent: {}
+[64.297970] (-) TimerEvent: {}
+[64.398882] (-) TimerEvent: {}
+[64.499681] (-) TimerEvent: {}
+[64.601096] (-) TimerEvent: {}
+[64.702801] (-) TimerEvent: {}
+[64.803860] (-) TimerEvent: {}
+[64.904690] (-) TimerEvent: {}
+[65.005651] (-) TimerEvent: {}
+[65.106745] (-) TimerEvent: {}
+[65.207675] (-) TimerEvent: {}
+[65.308695] (-) TimerEvent: {}
+[65.409561] (-) TimerEvent: {}
+[65.510477] (-) TimerEvent: {}
+[65.611644] (-) TimerEvent: {}
+[65.712637] (-) TimerEvent: {}
+[65.813712] (-) TimerEvent: {}
+[65.914575] (-) TimerEvent: {}
+[66.015879] (-) TimerEvent: {}
+[66.116793] (-) TimerEvent: {}
+[66.218213] (-) TimerEvent: {}
+[66.319529] (-) TimerEvent: {}
+[66.421463] (-) TimerEvent: {}
+[66.522420] (-) TimerEvent: {}
+[66.623280] (-) TimerEvent: {}
+[66.724318] (-) TimerEvent: {}
+[66.825565] (-) TimerEvent: {}
+[66.927938] (-) TimerEvent: {}
+[67.029559] (-) TimerEvent: {}
+[67.130714] (-) TimerEvent: {}
+[67.231710] (-) TimerEvent: {}
+[67.332507] (-) TimerEvent: {}
+[67.434232] (-) TimerEvent: {}
+[67.535186] (-) TimerEvent: {}
+[67.636138] (-) TimerEvent: {}
+[67.736959] (-) TimerEvent: {}
+[67.838127] (-) TimerEvent: {}
+[67.939238] (-) TimerEvent: {}
+[68.040473] (-) TimerEvent: {}
+[68.141489] (-) TimerEvent: {}
+[68.242380] (-) TimerEvent: {}
+[68.343320] (-) TimerEvent: {}
+[68.444393] (-) TimerEvent: {}
+[68.545124] (-) TimerEvent: {}
+[68.646258] (-) TimerEvent: {}
+[68.747139] (-) TimerEvent: {}
+[68.848161] (-) TimerEvent: {}
+[68.949364] (-) TimerEvent: {}
+[69.050406] (-) TimerEvent: {}
+[69.151222] (-) TimerEvent: {}
+[69.252495] (-) TimerEvent: {}
+[69.353995] (-) TimerEvent: {}
+[69.455114] (-) TimerEvent: {}
+[69.556081] (-) TimerEvent: {}
+[69.656855] (-) TimerEvent: {}
+[69.757751] (-) TimerEvent: {}
+[69.858813] (-) TimerEvent: {}
+[69.960195] (-) TimerEvent: {}
+[70.061331] (-) TimerEvent: {}
+[70.162427] (-) TimerEvent: {}
+[70.263745] (-) TimerEvent: {}
+[70.365152] (-) TimerEvent: {}
+[70.466405] (-) TimerEvent: {}
+[70.567384] (-) TimerEvent: {}
+[70.668262] (-) TimerEvent: {}
+[70.769463] (-) TimerEvent: {}
+[70.870748] (-) TimerEvent: {}
+[70.971526] (-) TimerEvent: {}
+[71.072782] (-) TimerEvent: {}
+[71.173903] (-) TimerEvent: {}
+[71.274866] (-) TimerEvent: {}
+[71.376117] (-) TimerEvent: {}
+[71.477026] (-) TimerEvent: {}
+[71.577949] (-) TimerEvent: {}
+[71.678920] (-) TimerEvent: {}
+[71.779737] (-) TimerEvent: {}
+[71.880759] (-) TimerEvent: {}
+[71.981725] (-) TimerEvent: {}
+[72.082811] (-) TimerEvent: {}
+[72.184084] (-) TimerEvent: {}
+[72.285027] (-) TimerEvent: {}
+[72.386169] (-) TimerEvent: {}
+[72.494903] (-) TimerEvent: {}
+[72.595891] (-) TimerEvent: {}
+[72.697524] (-) TimerEvent: {}
+[72.799182] (-) TimerEvent: {}
+[72.900727] (-) TimerEvent: {}
+[73.001805] (-) TimerEvent: {}
+[73.103239] (-) TimerEvent: {}
+[73.204320] (-) TimerEvent: {}
+[73.305246] (-) TimerEvent: {}
+[73.407803] (-) TimerEvent: {}
+[73.509228] (-) TimerEvent: {}
+[73.611552] (-) TimerEvent: {}
+[73.712650] (-) TimerEvent: {}
+[73.813709] (-) TimerEvent: {}
+[73.914932] (-) TimerEvent: {}
+[74.015824] (-) TimerEvent: {}
+[74.116950] (-) TimerEvent: {}
+[74.218139] (-) TimerEvent: {}
+[74.319529] (-) TimerEvent: {}
+[74.421071] (-) TimerEvent: {}
+[74.521996] (-) TimerEvent: {}
+[74.623153] (-) TimerEvent: {}
+[74.723927] (-) TimerEvent: {}
+[74.825149] (-) TimerEvent: {}
+[74.926490] (-) TimerEvent: {}
+[75.027562] (-) TimerEvent: {}
+[75.129172] (-) TimerEvent: {}
+[75.230268] (-) TimerEvent: {}
+[75.331268] (-) TimerEvent: {}
+[75.432214] (-) TimerEvent: {}
+[75.533258] (-) TimerEvent: {}
+[75.634534] (-) TimerEvent: {}
+[75.735486] (-) TimerEvent: {}
+[75.836877] (-) TimerEvent: {}
+[75.938029] (-) TimerEvent: {}
+[76.039183] (-) TimerEvent: {}
+[76.111044] (ob_robotics_interface) JobEnded: {'identifier': 'ob_robotics_interface', 'rc': 0}
+[76.136189] (-) EventReactorShutdown: {}

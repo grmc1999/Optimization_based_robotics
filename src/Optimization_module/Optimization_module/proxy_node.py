@@ -12,9 +12,9 @@ import math
 import tf2_ros
 import tf2_geometry_msgs
 
-from OB_robotics_interface.msg import Performance_data
-from OB_robotics_interface.msg import Robot_Model_Interface
-from OB_robotics_interface.msg import Optimization_data
+#from ob_robotics_interface.msg import Performance_data
+from ob_robotics_interface.msg import RobotModelInterface
+#from ob_robotics_interface.msg import Optimization_data
 
 #import rospy
 
@@ -28,26 +28,35 @@ class robot_interface_node(Node):
     """
 
     def __init__(self):
-        super().__init__('Model')
+        super().__init__('Proxy')
 
         self.declare_parameter('Mode',"train")
         # mode should be train, test, deploy
         # Assertion for defined modes
 
         #self.goal_pose=None
+        self.model_command=None
+        self.input=None
 
         # Environment interface
         self.input_publisher = self.create_publisher(
-            Robot_Model_Interface,'model_input',
+            RobotModelInterface,'/model_input',
             10)
+        
+        self.model_command_subscription = self.create_subscription(
+            RobotModelInterface,'model_command', # This subscription has to be set for every type of problem
+            self.get_model_command,10)
         
         # Optimization interface
         self.topic_subscription = self.create_subscription(
-            Robot_Model_Interface,'topic', # This subscription has to be set for every type of problem
+            RobotModelInterface,'topic', # This subscription has to be set for every type of problem
             self.get_input,10)
         
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
+
+    def get_model_command(self,msg):
+        self.model_command=msg
 
     def get_input(self,msg):
         self.input=msg
@@ -57,13 +66,11 @@ class robot_interface_node(Node):
         data parsing and other stuff
         """
         # Transform model output for ros format
-        model_input=Robot_Model_Interface()
-        model_input.timestamp="model_debug"
-        model_input.values=self.input
+        model_input=RobotModelInterface()
+        model_input.timestamp=self.get_clock().now().to_msg()
+        model_input.value=self.input
+        
 
-        #model_out=getattr(self.model,self.model_mode)(self.input)
-        #model_output.output_data=model_out
-        #if self.model_mode!="deploy":
         self.input_publisher.publish(model_input)
 
 def main(args=None):

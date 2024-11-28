@@ -21,6 +21,11 @@ setup(
     entry_points={
         'console_scripts': [
             "model_node = Optimization_module.model_node:main",
+            "objective_node = Optimization_module.objective_node:main",
+            "proxy_node = Optimization_module.proxy_node:main",
+            "PID_model_node = Optimization_module.PID_model_node:main",
+            "IMU_proxy_node = Optimization_module.IMU_proxy_node:main",
+            "stability_objective_node = Optimization_module.stability_objective_node:main",
         ],
     },
 )

@@ -1,0 +1,51 @@
+[0.354s] Invoking command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface -DCMAKE_INSTALL_PREFIX=/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface
+[0.492s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.827s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.846s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.229s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.386s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.801s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.802s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.804s]   ob_robotics_interface --arguments-file
+[1.806s]   /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface/rosidl_adapter__arguments__ob_robotics_interface.json
+[1.807s]   --output-dir
+[1.808s]   /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface/rosidl_adapter/ob_robotics_interface
+[1.809s]   --output-file
+[1.810s]   /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface/rosidl_adapter/ob_robotics_interface.idls)
+[1.811s]   returned error code 1:
+[1.812s] 
+[1.898s]   Traceback (most recent call last):
+[1.900s] 
+[1.901s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.902s]     File "<frozen runpy>", line 88, in _run_code
+[1.903s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.904s]       sys.exit(main())
+[1.904s]                ^^^^^^
+[1.905s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.906s]       abs_idl_file = convert_to_idl(
+[1.906s]                      ^^^^^^^^^^^^^^^
+[1.907s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.908s]       return convert_msg_to_idl(
+[1.908s]              ^^^^^^^^^^^^^^^^^^^
+[1.909s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.909s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.910s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.911s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[1.911s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[1.912s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.912s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[1.913s]       self.base_type = BaseType(
+[1.914s]                        ^^^^^^^^^
+[1.914s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.915s]       raise InvalidResourceName(
+[1.916s] 
+[1.917s]   rosidl_adapter.parser.InvalidResourceName: 'model_processed_data' is an
+[1.918s]   invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.919s] 
+[1.920s] Call Stack (most recent call first):
+[1.921s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.922s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[1.923s] 
+[1.924s] [0m
+[1.925s] -- Configuring incomplete, errors occurred!
+[1.945s] Invoked command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface -DCMAKE_INSTALL_PREFIX=/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface

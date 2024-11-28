@@ -1,0 +1,210 @@
+[2.482s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.482s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f845f2d96a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f845f4e48f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f845f4e48f0>>, mixin_verb=('build',))
+[2.856s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.857s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.859s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.861s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.087s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.105s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.107s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.115s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.116s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.118s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.124s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.125s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.137s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.137s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.147s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extensions ['ignore', 'ignore_ament_install']
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extension 'ignore'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extension 'ignore_ament_install'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extensions ['colcon_pkg']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extension 'colcon_pkg'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extensions ['colcon_meta']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extension 'colcon_meta'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extensions ['ros']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/Optimization_module) by extension 'ros'
+[3.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Optimization_module' with type 'ros.ament_python' and name 'Optimization_module'
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extensions ['ignore', 'ignore_ament_install']
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extension 'ignore'
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extension 'ignore_ament_install'
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extensions ['colcon_pkg']
+[3.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extension 'colcon_pkg'
+[3.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extensions ['colcon_meta']
+[3.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extension 'colcon_meta'
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extensions ['ros']
+[3.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/ob_robotics_interface) by extension 'ros'
+[3.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ob_robotics_interface' with type 'ros.ament_cmake' and name 'ob_robotics_interface'
+[3.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.678s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.678s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.840s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install
+[4.016s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install
+[4.023s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 358 installed packages in /opt/ros/jazzy
+[4.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.456s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'cmake_args' from command line to 'None'
+[4.457s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'cmake_target' from command line to 'None'
+[4.457s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.458s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'cmake_clean_cache' from command line to 'False'
+[4.459s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'cmake_clean_first' from command line to 'False'
+[4.459s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'cmake_force_configure' from command line to 'False'
+[4.460s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'ament_cmake_args' from command line to 'None'
+[4.460s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'catkin_cmake_args' from command line to 'None'
+[4.461s] Level 5:colcon.colcon_core.verb:set package 'Optimization_module' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.462s] DEBUG:colcon.colcon_core.verb:Building package 'Optimization_module' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module', 'merge_install': False, 'path': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/Optimization_module', 'symlink_install': False, 'test_result_base': None}
+[4.463s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'cmake_args' from command line to 'None'
+[4.463s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'cmake_target' from command line to 'None'
+[4.464s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.464s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[4.464s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'cmake_clean_first' from command line to 'False'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'cmake_force_configure' from command line to 'False'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'ament_cmake_args' from command line to 'None'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[4.467s] Level 5:colcon.colcon_core.verb:set package 'ob_robotics_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.467s] DEBUG:colcon.colcon_core.verb:Building package 'ob_robotics_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface', 'merge_install': False, 'path': '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface', 'symlink_install': False, 'test_result_base': None}
+[4.468s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.470s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.472s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/Optimization_module' with build type 'ament_python'
+[4.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('Optimization_module', 'ament_prefix_path')
+[4.541s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/hook/ament_prefix_path.ps1'
+[4.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/hook/ament_prefix_path.dsv'
+[4.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/hook/ament_prefix_path.sh'
+[4.620s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.916s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface' with build type 'ament_cmake'
+[3.917s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface'
+[3.918s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.918s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.163s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/Optimization_module'
+[9.165s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.166s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/opt/ros/jazzy /usr/bin/cmake --build /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface -- -j12 -l12
+[21.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/Optimization_module': PYTHONPATH=/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Optimization_module build --build-base /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/build install --record /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/install.log --single-version-externally-managed install_data
+[24.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/opt/ros/jazzy /usr/bin/cmake --build /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface -- -j12 -l12
+[32.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/Optimization_module' returned '0': PYTHONPATH=/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Optimization_module build --build-base /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/build install --record /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/Optimization_module/install.log --single-version-externally-managed install_data
+[32.932s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module' for CMake module files
+[33.033s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module' for CMake config files
+[33.199s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib'
+[33.205s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/bin'
+[33.207s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/pkgconfig/Optimization_module.pc'
+[33.211s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/lib/python3.12/site-packages'
+[33.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('Optimization_module', 'pythonpath')
+[33.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/hook/pythonpath.ps1'
+[33.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/hook/pythonpath.dsv'
+[33.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/hook/pythonpath.sh'
+[33.302s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/bin'
+[33.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Optimization_module)
+[33.305s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/package.ps1'
+[33.327s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/package.dsv'
+[33.351s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/package.sh'
+[33.378s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/package.bash'
+[33.401s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/Optimization_module/package.zsh'
+[33.427s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module/share/colcon-core/packages/Optimization_module)
+[34.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/opt/ros/jazzy /usr/bin/cmake --install /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface
+[47.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ob_robotics_interface)
+[47.398s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface' for CMake module files
+[47.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/Optimization_module:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_test:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/turtlesim_control:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_virtual:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/ros2_ws/install/gpg_urdf:/opt/ros/jazzy /usr/bin/cmake --install /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/ob_robotics_interface
+[47.720s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface' for CMake config files
+[48.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('ob_robotics_interface', 'cmake_prefix_path')
+[48.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/cmake_prefix_path.ps1'
+[48.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/cmake_prefix_path.dsv'
+[48.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/cmake_prefix_path.sh'
+[48.097s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib'
+[48.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('ob_robotics_interface', 'ld_library_path_lib')
+[48.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/ld_library_path_lib.ps1'
+[48.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/ld_library_path_lib.dsv'
+[48.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/ld_library_path_lib.sh'
+[48.184s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/bin'
+[48.187s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/pkgconfig/ob_robotics_interface.pc'
+[48.190s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages'
+[48.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('ob_robotics_interface', 'pythonpath')
+[48.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/pythonpath.ps1'
+[48.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/pythonpath.dsv'
+[48.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/pythonpath.sh'
+[48.273s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/bin'
+[48.276s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.ps1'
+[48.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.dsv'
+[48.313s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.sh'
+[48.332s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.bash'
+[48.353s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.zsh'
+[48.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/colcon-core/packages/ob_robotics_interface)
+[57.483s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ob_robotics_interface)
+[57.484s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface' for CMake module files
+[57.921s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface' for CMake config files
+[58.179s] Level 1:colcon.colcon_core.shell:create_environment_hook('ob_robotics_interface', 'cmake_prefix_path')
+[58.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/cmake_prefix_path.ps1'
+[58.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/cmake_prefix_path.dsv'
+[58.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/cmake_prefix_path.sh'
+[58.258s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib'
+[58.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('ob_robotics_interface', 'ld_library_path_lib')
+[58.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/ld_library_path_lib.ps1'
+[58.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/ld_library_path_lib.dsv'
+[58.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/ld_library_path_lib.sh'
+[58.344s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/bin'
+[58.346s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/pkgconfig/ob_robotics_interface.pc'
+[58.348s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/lib/python3.12/site-packages'
+[58.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('ob_robotics_interface', 'pythonpath')
+[58.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/pythonpath.ps1'
+[58.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/pythonpath.dsv'
+[58.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/hook/pythonpath.sh'
+[58.423s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/bin'
+[58.425s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.ps1'
+[58.445s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.dsv'
+[58.463s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.sh'
+[58.483s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.bash'
+[58.507s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/ob_robotics_interface/package.zsh'
+[58.525s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/ob_robotics_interface/share/colcon-core/packages/ob_robotics_interface)
+[58.544s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[58.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[58.546s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[58.547s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[58.942s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[58.942s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[58.943s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[58.944s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[58.947s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[58.947s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[58.948s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/local_setup.ps1'
+[58.958s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/_local_setup_util_ps1.py'
+[58.966s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/setup.ps1'
+[59.107s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/local_setup.sh'
+[59.116s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/_local_setup_util_sh.py'
+[59.123s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/setup.sh'
+[59.258s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/local_setup.bash'
+[59.266s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/setup.bash'
+[59.418s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/local_setup.zsh'
+[59.429s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/setup.zsh'

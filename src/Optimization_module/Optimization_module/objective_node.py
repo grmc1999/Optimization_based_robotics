@@ -12,9 +12,9 @@ import math
 import tf2_ros
 import tf2_geometry_msgs
 
-from OB_robotics_interface.msg import Performance_data
-from OB_robotics_interface.msg import Robot_Model_Interface
-from OB_robotics_interface.msg import Optimization_data
+from ob_robotics_interface.msg import PerformanceData
+#from ob_robotics_interface.msg import Robot_Model_Interface
+from ob_robotics_interface.msg import OptimizationData
 #import rospy
 
 
@@ -25,7 +25,7 @@ class Objective_node(Node):
     """
 
     def __init__(self):
-        super().__init__('Model')
+        super().__init__('Objective')
 
         #self.declare_parameter('Mode',"train")
         self.current_loss=None
@@ -36,11 +36,11 @@ class Objective_node(Node):
         
         # Optimization interface
         self.model_output_subscription = self.create_subscription(
-            Performance_data,'performance_data', # TODO: Check if this topic is remaped
+            PerformanceData,'Performance_Data', # TODO: Check if this topic is remaped
             self.get_performance,10)
         
         self.loss_publisher = self.create_publisher(
-            Optimization_data,
+            OptimizationData,
 		    'optimization_input',
 		    10)
         
@@ -58,11 +58,11 @@ class Objective_node(Node):
         """
         self.model_performance=msg
 
-    def model_mode(self):
-        self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
+#    def model_mode(self):
+#        self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
 
-    def end_condition(self,state):
-        return not(state<0.5)
+    def end_condition(self):
+        return False
     
     def timer_callback(self):
         """
@@ -71,26 +71,22 @@ class Objective_node(Node):
         Processed_data.loss -> float32
         Processed_data.episode_end -> bool
         """
-        Performance=Performance_data()
+        Performance=OptimizationData()
         # Check end of the episode
         if self.model_performance != None:
+            #print(len(self.model_performance.robot_state))
+            #print(len(self.model_performance.model_values))
+
+            # Add size before update
             self.model_performance.robot_state
-            if self.end_condition(self.model_performance.robot_state):
-                Performance.topic="opt_debug"
-                Performance.values=self.loss_function(
-                    self.model_performance.model_values,
+            Performance.loss=float(self.objective_function(
                     self.model_performance.robot_state
-                    )
-                Performance.episode_end=False
-            else:
-                Performance.topic="opt_debug"
-                Performance.values=self.loss_function(
-                    self.model_performance.model_values,
-                    self.model_performance.robot_state
-                    )
-                Performance.episode_end=True
+                    ))
+            
+            Performance.episode_end=self.end_condition()
             
             self.loss_publisher.publish(Performance)
+            self.model_performance = None
 
 
                 

@@ -84,4 +84,16 @@ Node parameters:
 
 ### Directions
 
-- [ ] optimization losses might be computed in this node
+- [ ] Objective node might be implemented as a service
+
+
+
+rmc1999@LAPTOP-E0H966EI:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics$ gz service -i -s world/empty/set_pose
+Service providers [Address, Request Message Type, Response Message Type]:
+  tcp://172.23.63.51:35871, gz.msgs.Pose, gz.msgs.Boolean
+grmc1999@LAPTOP-E0H966EI:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics$ gz service -i -s world/empty/remove
+Service providers [Address, Request Message Type, Response Message Type]:
+  tcp://172.23.63.51:35871, gz.msgs.Entity, gz.msgs.Boolean
+grmc1999@LAPTOP-E0H966EI:/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics$ gz service -i -s world/empty/create
+Service providers [Address, Request Message Type, Response Message Type]:
+  tcp://172.23.63.51:35871, gz.msgs.EntityFactory, gz.msgs.Boolean

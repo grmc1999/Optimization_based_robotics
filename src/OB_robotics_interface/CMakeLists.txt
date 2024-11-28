@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(OB_robotics_interface)
+project(ob_robotics_interface)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -9,14 +9,15 @@ endif()
 find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Model_processed_data.msg"
-  "msg/Performance_data.msg"
-  "msg/Optimization_data.msg"
- )
+  "msg/ModelProcessedData.msg"
+  "msg/PerformanceData.msg"
+  "msg/OptimizationData.msg"
+  "msg/RobotModelInterface.msg"
+  DEPENDENCIES builtin_interfaces)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

@@ -1,0 +1,65 @@
+[0.085s] Invoking command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/OB_robotics_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface -DCMAKE_INSTALL_PREFIX=/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface
+[0.611s] -- The C compiler identification is GNU 13.2.0
+[2.485s] -- The CXX compiler identification is GNU 13.2.0
+[3.935s] -- Detecting C compiler ABI info
+[5.081s] -- Detecting C compiler ABI info - done
+[5.124s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.125s] -- Detecting C compile features
+[5.127s] -- Detecting C compile features - done
+[5.422s] -- Detecting CXX compiler ABI info
+[6.524s] -- Detecting CXX compiler ABI info - done
+[6.587s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.588s] -- Detecting CXX compile features
+[6.590s] -- Detecting CXX compile features - done
+[6.672s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.891s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.546s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[7.642s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.349s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.726s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[9.246s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[9.249s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[9.251s]   OB_robotics_interface --arguments-file
+[9.253s]   /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/OB_robotics_interface/rosidl_adapter__arguments__OB_robotics_interface.json
+[9.254s]   --output-dir
+[9.255s]   /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/OB_robotics_interface/rosidl_adapter/OB_robotics_interface
+[9.256s]   --output-file
+[9.257s]   /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/OB_robotics_interface/rosidl_adapter/OB_robotics_interface.idls)
+[9.258s]   returned error code 1:
+[9.260s] 
+[9.261s]   Traceback (most recent call last):
+[9.262s] 
+[9.263s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[9.264s]     File "<frozen runpy>", line 88, in _run_code
+[9.264s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[9.265s]       sys.exit(main())
+[9.266s]                ^^^^^^
+[9.267s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[9.268s]       abs_idl_file = convert_to_idl(
+[9.270s]                      ^^^^^^^^^^^^^^^
+[9.271s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[9.272s]       return convert_msg_to_idl(
+[9.274s]              ^^^^^^^^^^^^^^^^^^^
+[9.275s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[9.276s]       msg = parse_message_string(package_name, input_file.stem, content)
+[9.277s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[9.278s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[9.279s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[9.280s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[9.281s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[9.282s]       self.base_type = BaseType(
+[9.283s]                        ^^^^^^^^^
+[9.284s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 202, in __init__
+[9.285s]       raise InvalidResourceName(
+[9.286s] 
+[9.287s]   rosidl_adapter.parser.InvalidResourceName: 'OB_robotics_interface' is an
+[9.288s]   invalid package name.  It should have the pattern
+[9.289s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[9.290s] 
+[9.290s] Call Stack (most recent call first):
+[9.291s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[9.292s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[9.292s] 
+[9.293s] [0m
+[9.294s] -- Configuring incomplete, errors occurred!
+[9.295s] Invoked command in '/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/build/OB_robotics_interface' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/src/ob_robotics_interface -DCMAKE_INSTALL_PREFIX=/mnt/d/Documentos/PUC-Rio/Maestrado/ELE2363/Optimization_based_robotics/install/OB_robotics_interface
