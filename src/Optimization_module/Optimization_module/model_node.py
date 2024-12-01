@@ -44,10 +44,10 @@ class Model_node(Node):
 		    'model_command', 
 		    10)
         
-        # Optimization interface
-        self.loss_subscription = self.create_subscription(
-            OptimizationData,'optimization_input', # TODO: Check if this topic is remaped
-            self.get_optimization_input,10)
+        ## Optimization interface
+        #self.loss_subscription = self.create_subscription(
+        #    OptimizationData,'optimization_input', # TODO: Check if this topic is remaped
+        #    self.get_optimization_input,10)
         
         self.model_output_publisher = self.create_publisher(
             PerformanceData,
@@ -102,17 +102,17 @@ class Model_node(Node):
             self.data_batch=[self.input.value]
             self.state_batch=[self.sensor_value]
     
-    def get_optimization_input(self,msg):
-        """
-        loss structure
-        loss.timestamp -> int?
-        loss.value -> float32
-        """
-        self.set_model_mode()
-        self.loss_input=msg
-        self.episode_end=self.loss_input.episode_end
-        print("update function")
-        self.update_function()
+    #def get_optimization_input(self,msg):
+    #    """
+    #    loss structure
+    #    loss.timestamp -> int?
+    #    loss.value -> float32
+    #    """
+    #    self.set_model_mode()
+    #    self.loss_input=msg
+    #    self.episode_end=self.loss_input.episode_end
+    #    print("update function")
+    #    self.update_function()
 
     def set_model_mode(self):
         self.model_mode=str(self.get_parameter('mode').get_parameter_value().string_value)

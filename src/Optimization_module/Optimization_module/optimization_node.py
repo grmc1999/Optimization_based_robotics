@@ -9,7 +9,7 @@ from tf_transformations import euler_from_quaternion
 
 #from ob_robotics_interface.msg import Performance_data
 #from ob_robotics_interface.msg import Robot_Model_Interface
-#from ob_robotics_interface.msg import Optimization_data
+from ob_robotics_interface.msg import OptimizationData
 
 import numpy as np
 
@@ -42,6 +42,11 @@ class PID_Model_node(Model_node):
         self.declare_parameter('selection_size',3)
         self.declare_parameter('sample_size',3)
         #self.declare_parameter('sample_size',3)
+
+        # Optimization interface
+        self.loss_subscription = self.create_subscription(
+            OptimizationData,'optimization_input', # TODO: Check if this topic is remaped
+            self.get_optimization_input,10)
 
         #DEFINE  MODEL
         self.model=basic_PID_model(
@@ -85,7 +90,7 @@ class PID_Model_node(Model_node):
         loss.timestamp -> int?
         loss.value -> float32
         """
-        self.set_model_mode()
+
         self.loss_input=msg
 
         # OPTIMIZATION PROCEDURES

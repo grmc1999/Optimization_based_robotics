@@ -100,11 +100,13 @@ class PID_Model_node(Model_node):
         
         print("parameters length")
         print(len(self.parameters))
+        self.prototypes_iter=self.prototypes_iter+1
         Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
         self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
         print("update function")
-        self.update_function()
-        self.prototypes_iter=self.prototypes_iter+1
+        if len(self.samples_results)>self.sample_size:
+            self.update_function()
+        #self.prototypes_iter=self.prototypes_iter+1
         
 
     
@@ -112,33 +114,29 @@ class PID_Model_node(Model_node):
         # Optimization alg
 
         # genetic
-        if len(self.samples_results)>self.sample_size:
-            self.prototypes_iter=0
-            self.samples_results=np.array(self.samples_results)
-            loss_mean=np.mean(self.samples_results[:,1])
-            print(np.argsort(self.samples_results[:,1])[:-2])
-            self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[-(int(self.selection_size)):]]
-            print(self.samples_results)
-            print(self.samples_results.shape)
-
-            # create new NxNxN
-            best_params=self.samples_results[:,0]
-            print(best_params)
-            best_params=np.array(list(map(lambda d: list(d.values()),best_params)))
-            print(best_params)
-            print(best_params.shape)
-
-            # combination
-            self.parameters=np.array(list(product(*best_params)))
-            # mutation
-            self.parameters=abs(self.parameters+np.random.normal(0,loss_mean*0.1,self.parameters.shape)) # TODO: reduce scale wrt loss
-
-            self.prototypes_iter=0
-            Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
         
-            self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
-
-            self.samples_results=[]
+        self.prototypes_iter=0
+        self.samples_results=np.array(self.samples_results)
+        loss_mean=np.mean(self.samples_results[:,1])
+        print(np.argsort(self.samples_results[:,1])[:-2])
+        self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[-(int(self.selection_size)):]]
+        print(self.samples_results)
+        print(self.samples_results.shape)
+        # create new NxNxN
+        best_params=self.samples_results[:,0]
+        print(best_params)
+        best_params=np.array(list(map(lambda d: list(d.values()),best_params)))
+        print(best_params)
+        print(best_params.shape)
+        # combination
+        self.parameters=np.array(list(product(*best_params)))
+        # mutation
+        self.parameters=abs(self.parameters+np.random.normal(0,loss_mean*0.1,self.parameters.shape)) # TODO: reduce scale wrt loss
+        self.prototypes_iter=0
+        Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
+    
+        self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
+        self.samples_results=[]
 
 
 def main(args=None):
