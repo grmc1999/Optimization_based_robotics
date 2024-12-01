@@ -34,7 +34,7 @@ class IMU_proxy_node(robot_interface_node):
         self.command_publisher = self.create_publisher(
             TwistStamped,
 		'diff_drive_controller/cmd_vel',
-		10)
+		1)
 
     def timer_callback(self):
         """
@@ -60,6 +60,8 @@ class IMU_proxy_node(robot_interface_node):
         #Interface publication
         if self.model_command!=None:
             v_u=TwistStamped()
+            v_u.header.stamp=self.get_clock().now().to_msg()
+            v_u.header.frame_id="base_link"
             v_u.twist.linear.x=self.model_command.value
             self.command_publisher.publish(v_u)
 

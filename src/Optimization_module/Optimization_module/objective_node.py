@@ -17,6 +17,8 @@ from ob_robotics_interface.msg import PerformanceData
 from ob_robotics_interface.msg import OptimizationData
 #import rospy
 
+from ros_gz_interfaces.srv import SetEntityPose
+
 
 class Objective_node(Node):
     """
@@ -43,9 +45,18 @@ class Objective_node(Node):
             OptimizationData,
 		    'optimization_input',
 		    10)
+
+        self.cli = self.create_client(SetEntityPose, 'world/empty/set_pose')
+
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+        self.req = SetEntityPose.Request()
         
-        timer_period = 0.1  # seconds
+        timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
+
+        #self.episode_end=False
+        self.end_condition_val=False
 
 
     def get_performance(self,msg):
@@ -61,7 +72,11 @@ class Objective_node(Node):
 #    def model_mode(self):
 #        self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
 
-    def end_condition(self):
+    def check_end_condition(self):
+        
+
+        #self.req.
+
         return False
     
     def timer_callback(self):
@@ -73,20 +88,44 @@ class Objective_node(Node):
         """
         Performance=OptimizationData()
         # Check end of the episode
+        Performance.episode_end=self.check_end_condition()
         if self.model_performance != None:
-            #print(len(self.model_performance.robot_state))
-            #print(len(self.model_performance.model_values))
 
             # Add size before update
             self.model_performance.robot_state
+            Performance.timestamp=self.get_clock().now().to_msg()
             Performance.loss=float(self.objective_function(
                     self.model_performance.robot_state
                     ))
             
-            Performance.episode_end=self.end_condition()
+            #self.episode_end=self.model_performance.episode_end
+            self.end_condition_val=self.model_performance.episode_end
+            
+            
             
             self.loss_publisher.publish(Performance)
             self.model_performance = None
+
+        
+        
+
+        if self.end_condition_val:
+            
+            self.req.entity.name="my_gpg" #TODO: add flexibility for parallel simulation
+            self.req.entity.id=0
+            self.req.entity.type=0
+            self.req.pose.position.z=0.4
+            self.req.pose.position.x=0.
+            self.req.pose.position.y=0.
+            self.req.pose.orientation.z=0.
+            self.req.pose.orientation.x=0.
+            self.req.pose.orientation.y=0.
+            self.req.pose.orientation.w=1.
+    
+            self.future = self.cli.call_async(self.req)
+            #self.future = self.cli.call(self.req)
+            #rclpy.spin_until_future_complete(self, self.future)
+            self.end_condition_val=False
 
 
                 

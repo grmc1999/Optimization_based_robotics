@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PerformanceData.msg"
   "msg/OptimizationData.msg"
   "msg/RobotModelInterface.msg"
+  "msg/RobotModelMultiInterface.msg"
   DEPENDENCIES builtin_interfaces)
 
 if(BUILD_TESTING)

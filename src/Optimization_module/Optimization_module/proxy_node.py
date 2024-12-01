@@ -45,7 +45,7 @@ class robot_interface_node(Node):
         
         self.model_command_subscription = self.create_subscription(
             RobotModelInterface,'model_command', # This subscription has to be set for every type of problem
-            self.get_model_command,10)
+            self.get_model_command,1)
         
         # Optimization interface
         self.topic_subscription = self.create_subscription(

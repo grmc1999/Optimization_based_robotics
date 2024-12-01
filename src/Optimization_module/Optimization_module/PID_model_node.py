@@ -39,6 +39,10 @@ class PID_Model_node(Model_node):
     def __init__(self):
         super().__init__()
 
+        self.declare_parameter('selection_size',3)
+        self.declare_parameter('sample_size',3)
+        #self.declare_parameter('sample_size',3)
+
         #DEFINE  MODEL
         self.model=basic_PID_model(
             Kp=0.1,
@@ -49,18 +53,21 @@ class PID_Model_node(Model_node):
 
         self.interface_topic_subscription = self.create_subscription(
             Imu,'/imu', # This subscription has to be set for every type of problem
-            self.get_sensor_input,10)
+            self.get_sensor_input,1)
 
         # OPTIMIZATION PROCEDURES
         
-        self.parameters=np.random.uniform(0,2,(8,3))
+        self.parameters=np.random.uniform(0,2,(27,3))
         self.samples_results=[]
-        self.sample_size=5
+        self.sample_size=25
+        self.selection_size=3
         self.prototypes_iter=0
         Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
         
         self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
         self.sensor_value=0
+
+        
 
     def get_sensor_input(self,msg):
         
@@ -90,11 +97,14 @@ class PID_Model_node(Model_node):
         self.samples_results.append(sampling_result)
         
         # set new params
-        self.prototypes_iter=self.prototypes_iter+1
+        
+        print("parameters length")
+        print(len(self.parameters))
         Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
         self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
         print("update function")
         self.update_function()
+        self.prototypes_iter=self.prototypes_iter+1
         
 
     
@@ -107,7 +117,7 @@ class PID_Model_node(Model_node):
             self.samples_results=np.array(self.samples_results)
             loss_mean=np.mean(self.samples_results[:,1])
             print(np.argsort(self.samples_results[:,1])[:-2])
-            self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[-3:]]
+            self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[-(int(self.selection_size)):]]
             print(self.samples_results)
             print(self.samples_results.shape)
 
@@ -121,7 +131,7 @@ class PID_Model_node(Model_node):
             # combination
             self.parameters=np.array(list(product(*best_params)))
             # mutation
-            self.parameters=np.abs(self.parameters+np.random.normal(0,loss_mean/2,self.parameters.shape)) # TODO: reduce scale wrt loss
+            self.parameters=abs(self.parameters+np.random.normal(0,loss_mean*0.1,self.parameters.shape)) # TODO: reduce scale wrt loss
 
             self.prototypes_iter=0
             Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
