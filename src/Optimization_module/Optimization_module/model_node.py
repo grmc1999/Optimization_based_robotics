@@ -84,6 +84,8 @@ class Model_node(Node):
         loss structure
         loss.timestamp -> int?
         loss.value -> float32
+
+        modifications: sent list each step
         """
         self.set_model_mode()
         self.input=msg
