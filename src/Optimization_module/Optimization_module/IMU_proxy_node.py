@@ -53,7 +53,7 @@ class IMU_proxy_node(robot_interface_node):
             model_input.value=float(orientation[1])
 
             self.input_publisher.publish(model_input)
-            
+
     def timer_callback(self):
         """
         data parsing
