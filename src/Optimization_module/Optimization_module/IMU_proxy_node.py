@@ -36,6 +36,24 @@ class IMU_proxy_node(robot_interface_node):
 		'diff_drive_controller/cmd_vel',
 		1)
 
+    def get_input(self,msg):
+        self.input=msg
+
+        if self.input!=None:
+            model_input=RobotModelInterface()
+
+            model_input.timestamp=self.get_clock().now().to_msg()
+            orientation=euler_from_quaternion([
+		            self.input.orientation.x,
+		            self.input.orientation.y,
+		            self.input.orientation.z,
+		            self.input.orientation.w
+                    ])
+            print(orientation)
+            model_input.value=float(orientation[1])
+
+            self.input_publisher.publish(model_input)
+            
     def timer_callback(self):
         """
         data parsing

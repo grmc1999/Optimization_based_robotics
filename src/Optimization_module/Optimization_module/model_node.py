@@ -99,7 +99,7 @@ class Model_node(Node):
                 Performance.robot_state=self.state_batch
                 Performance.episode_end=True
                 self.model_output_publisher.publish(Performance)
-            self.data_batch=[self.input.value]
+            self.data_batch=[0]
             self.state_batch=[self.sensor_value]
     
     def get_optimization_input(self,msg):
