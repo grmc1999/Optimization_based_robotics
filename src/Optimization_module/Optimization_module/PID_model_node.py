@@ -7,7 +7,7 @@ from .PID_model import basic_PID_model
 from sensor_msgs.msg import Imu
 from tf_transformations import euler_from_quaternion
 
-#from ob_robotics_interface.msg import Performance_data
+from ob_robotics_interface.msg import PerformanceData
 #from ob_robotics_interface.msg import Robot_Model_Interface
 #from ob_robotics_interface.msg import Optimization_data
 
@@ -40,7 +40,8 @@ class PID_Model_node(Model_node):
         super().__init__()
 
         self.declare_parameter('selection_size',3)
-        self.declare_parameter('sample_size',3)
+        self.declare_parameter('sample_size',25)
+        self.declare_parameter('mutation_magnitude',0.1)
         #self.declare_parameter('sample_size',3)
 
         #DEFINE  MODEL
@@ -57,11 +58,15 @@ class PID_Model_node(Model_node):
 
         # OPTIMIZATION PROCEDURES
         
-        self.parameters=np.random.uniform(0,2,(27,3))
+        
         self.samples_results=[]
         self.sample_size=25
         self.selection_size=3
         self.prototypes_iter=0
+        
+
+        self.parameters=np.random.uniform(0,2,(self.sample_size+2,3))
+
         Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
         
         self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
@@ -87,6 +92,7 @@ class PID_Model_node(Model_node):
         """
         self.set_model_mode()
         self.loss_input=msg
+        self.episode_end=self.loss_input.episode_end
 
         # OPTIMIZATION PROCEDURES
         sampling_result=[
@@ -105,33 +111,50 @@ class PID_Model_node(Model_node):
         print("update function")
         self.update_function()
         self.prototypes_iter=self.prototypes_iter+1
+
+        print("recieving episode condition: ",self.episode_end)
+        if self.loss_input.episode_end:
+            if self.model_mode!="deploy":
+                # Send information related to performance
+                # TODO ADD timestamp
+                Performance=PerformanceData()
+                Performance.model_values=self.data_batch
+                Performance.robot_state=self.state_batch
+                Performance.episode_end=False
+                self.model_output_publisher.publish(Performance)
+            self.data_batch=[self.input.value]
+            self.state_batch=[self.sensor_value]
         
+
+    def set_optimization_params(self):
+        self.selection_size=(self.get_parameter('selection_size').get_parameter_value().integer_value)
+        self.sample_size=(self.get_parameter('sample_size').get_parameter_value().integer_value)
+        self.mutation_magnitude=(self.get_parameter('mutation_magnitude').get_parameter_value().double_value)
 
     
     def update_function(self):
+        self.set_optimization_params()
         # Optimization alg
 
         # genetic
         if len(self.samples_results)>self.sample_size:
             self.prototypes_iter=0
             self.samples_results=np.array(self.samples_results)
-            loss_mean=np.mean(self.samples_results[:,1])
-            print(np.argsort(self.samples_results[:,1])[:-2])
-            self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[-(int(self.selection_size)):]]
-            print(self.samples_results)
-            print(self.samples_results.shape)
+            
+            self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[:(int(self.selection_size))]]
 
+            loss_mean=np.mean(self.samples_results[:,1])
+            
+            print("best params")
+            print(self.samples_results)
             # create new NxNxN
             best_params=self.samples_results[:,0]
-            print(best_params)
             best_params=np.array(list(map(lambda d: list(d.values()),best_params)))
-            print(best_params)
-            print(best_params.shape)
 
             # combination
-            self.parameters=np.array(list(product(*best_params)))
+            self.parameters=np.array(list(product(*best_params.T)))
             # mutation
-            self.parameters=abs(self.parameters+np.random.normal(0,loss_mean*0.1,self.parameters.shape)) # TODO: reduce scale wrt loss
+            self.parameters=abs(self.parameters+np.random.normal(0,loss_mean*self.mutation_magnitude,self.parameters.shape)) # TODO: reduce scale wrt loss
 
             self.prototypes_iter=0
             Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])

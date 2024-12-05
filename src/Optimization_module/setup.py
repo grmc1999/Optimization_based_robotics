@@ -26,6 +26,7 @@ setup(
             "PID_model_node = Optimization_module.PID_model_node:main",
             "IMU_proxy_node = Optimization_module.IMU_proxy_node:main",
             "stability_objective_node = Optimization_module.stability_objective_node:main",
+            "time_enforced_objective_node = Optimization_module.stability_time_enforced_objective_node:main",
         ],
     },
 )

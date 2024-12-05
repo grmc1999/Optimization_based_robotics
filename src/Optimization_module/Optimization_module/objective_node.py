@@ -52,7 +52,7 @@ class Objective_node(Node):
             self.get_logger().info('service not available, waiting again...')
         self.req = SetEntityPose.Request()
         
-        timer_period = 0.5  # seconds
+        timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         #self.episode_end=False
@@ -90,6 +90,7 @@ class Objective_node(Node):
         # Check end of the episode
         Performance.episode_end=self.check_end_condition()
         if self.model_performance != None:
+            print("recieved model performance")
 
             # Add size before update
             self.model_performance.robot_state
@@ -99,12 +100,28 @@ class Objective_node(Node):
                     ))
             
             #self.episode_end=self.model_performance.episode_end
+            print("setting end condition by model performance msg value ",self.model_performance.episode_end)
             self.end_condition_val=self.model_performance.episode_end
-            
-            
-            
+            #Performance.episode_end=self.model_performance.episode_end
+            Performance.episode_end=False
             self.loss_publisher.publish(Performance)
             self.model_performance = None
+        # Case of end of the episode with fake performance (might be service)
+        elif (Performance.episode_end):
+            print("end by physical conditions")
+            
+            Performance.timestamp=self.get_clock().now().to_msg()
+            Performance.loss=float(1e5) # Artificially setting high error
+            
+            #self.episode_end=self.model_performance.episode_end
+            print("setting end condition by physical bounds value ",Performance.episode_end)
+            #self.end_condition_val=Performance.episode_end
+            Performance.episode_end=Performance.episode_end
+            self.loss_publisher.publish(Performance)
+
+            #self.end_condition_val=False
+            self.model_performance = None
+        
 
         
         
@@ -126,6 +143,7 @@ class Objective_node(Node):
             #self.future = self.cli.call(self.req)
             #rclpy.spin_until_future_complete(self, self.future)
             self.end_condition_val=False
+            
 
 
                 

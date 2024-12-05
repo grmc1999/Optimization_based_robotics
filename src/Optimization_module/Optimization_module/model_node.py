@@ -87,7 +87,7 @@ class Model_node(Node):
         """
         self.set_model_mode()
         self.input=msg
-        if len(self.data_batch)<self.batch_size:
+        if len(self.data_batch)<self.batch_size and not(self.episode_end):
             self.data_batch.append(self.input.value)
             self.state_batch.append(self.sensor_value)
         else:
@@ -113,6 +113,11 @@ class Model_node(Node):
         self.episode_end=self.loss_input.episode_end
         print("update function")
         self.update_function()
+
+        print("recieving episode condition: ",self.episode_end)
+        if self.loss_input.episode_end:
+            self.data_batch=[]
+            self.state_batch=[]
 
     def set_model_mode(self):
         self.model_mode=str(self.get_parameter('mode').get_parameter_value().string_value)
@@ -156,7 +161,7 @@ class Model_node(Node):
             #run model update
             self.update_function()
         
-        self.command_publisher.publish(model_output)
+        #self.command_publisher.publish(model_output)
         self.episode_end=False
 
     def timer_callback(self):
