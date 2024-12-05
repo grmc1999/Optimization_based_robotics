@@ -18,6 +18,7 @@ from ob_robotics_interface.msg import OptimizationData
 #import rospy
 
 from ros_gz_interfaces.srv import SetEntityPose
+import time
 
 
 class Objective_node(Node):
@@ -143,7 +144,7 @@ class Objective_node(Node):
             #self.future = self.cli.call(self.req)
             #rclpy.spin_until_future_complete(self, self.future)
             self.end_condition_val=False
-            
+            time.sleep(2.0)
 
 
                 
