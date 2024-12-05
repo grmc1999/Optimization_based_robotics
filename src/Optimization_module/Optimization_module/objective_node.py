@@ -132,7 +132,7 @@ class Objective_node(Node):
             self.req.entity.name="my_gpg" #TODO: add flexibility for parallel simulation
             self.req.entity.id=0
             self.req.entity.type=0
-            self.req.pose.position.z=0.04
+            self.req.pose.position.z=0.1
             self.req.pose.position.x=0.
             self.req.pose.position.y=0.
             self.req.pose.orientation.z=0.
