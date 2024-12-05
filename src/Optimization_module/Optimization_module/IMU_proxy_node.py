@@ -59,22 +59,22 @@ class IMU_proxy_node(robot_interface_node):
         data parsing
         """
         # Transform model output for ros format
-
-        if self.input!=None:
-            model_input=RobotModelInterface()
-
-            model_input.timestamp=self.get_clock().now().to_msg()
-            orientation=euler_from_quaternion([
-		            self.input.orientation.x,
-		            self.input.orientation.y,
-		            self.input.orientation.z,
-		            self.input.orientation.w
-                    ])
-            print(orientation)
-            model_input.value=float(orientation[1])
-
-            self.input_publisher.publish(model_input)
-
+#
+        #if self.input!=None:
+        #    model_input=RobotModelInterface()
+#
+        #    model_input.timestamp=self.get_clock().now().to_msg()
+        #    orientation=euler_from_quaternion([
+		#            self.input.orientation.x,
+		#            self.input.orientation.y,
+		#            self.input.orientation.z,
+		#            self.input.orientation.w
+        #            ])
+        #    print(orientation)
+        #    model_input.value=float(orientation[1])
+#
+        #    self.input_publisher.publish(model_input)
+#
         #Interface publication
         if self.model_command!=None:
             v_u=TwistStamped()
