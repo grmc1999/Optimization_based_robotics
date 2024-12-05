@@ -81,8 +81,8 @@ class Objective_node(Objective_node):
             cond_array = [
                 self.position.pose.pose.position.x-self.cond_pose>1,
                 self.position.pose.pose.position.x-self.cond_pose<-1.,
-                self.sensor_value>1.5,
-                self.sensor_value<-1.5
+                self.sensor_value>0.7,
+                self.sensor_value<-0.7
             ]
             if reduce(lambda a,b:a or b,cond_array):
                     print(self.sensor_value)

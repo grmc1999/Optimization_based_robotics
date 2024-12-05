@@ -132,7 +132,7 @@ class Objective_node(Node):
             self.req.entity.name="my_gpg" #TODO: add flexibility for parallel simulation
             self.req.entity.id=0
             self.req.entity.type=0
-            self.req.pose.position.z=0.4
+            self.req.pose.position.z=0.04
             self.req.pose.position.x=0.
             self.req.pose.position.y=0.
             self.req.pose.orientation.z=0.
@@ -144,7 +144,7 @@ class Objective_node(Node):
             #self.future = self.cli.call(self.req)
             #rclpy.spin_until_future_complete(self, self.future)
             self.end_condition_val=False
-            time.sleep(2.0)
+            time.sleep(0.2)
 
 
                 

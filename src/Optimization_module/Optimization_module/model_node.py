@@ -55,7 +55,7 @@ class Model_node(Node):
 		    10)
 
         
-        timer_period = 0.5  # seconds
+        timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.declare_parameter('mode',"train")
