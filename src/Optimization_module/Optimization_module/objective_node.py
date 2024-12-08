@@ -69,6 +69,24 @@ class Objective_node(Node):
         Processed_data.episode_end -> bool
         """
         self.model_performance=msg
+        Performance=OptimizationData()
+
+        print("recieved model performance")
+        # Add size before update
+        self.model_performance.robot_state
+        Performance.timestamp=self.get_clock().now().to_msg()
+        Performance.loss=float(self.objective_function(
+                self.model_performance.robot_state
+                ))
+        
+        #self.episode_end=self.model_performance.episode_end
+        print("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
+        self.get_logger().info('position reset by end episode')
+        #self.get_logger().info("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
+        self.end_condition_val=self.model_performance.episode_end
+        #Performance.episode_end=self.model_performance.episode_end
+        Performance.episode_end=False
+        self.loss_publisher.publish(Performance)
 
 #    def model_mode(self):
 #        self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
@@ -90,39 +108,16 @@ class Objective_node(Node):
         Performance=OptimizationData()
         # Check end of the episode
         Performance.episode_end=self.check_end_condition()
-        if self.model_performance != None:
-            print("recieved model performance")
-
-            # Add size before update
-            self.model_performance.robot_state
-            Performance.timestamp=self.get_clock().now().to_msg()
-            Performance.loss=float(self.objective_function(
-                    self.model_performance.robot_state
-                    ))
-            
-            #self.episode_end=self.model_performance.episode_end
-            print("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
-            self.get_logger().info('position reset by end episode')
-            #self.get_logger().info("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
-            self.end_condition_val=self.model_performance.episode_end
-            #Performance.episode_end=self.model_performance.episode_end
-            Performance.episode_end=False
-            self.loss_publisher.publish(Performance)
-            self.model_performance = None
+        
         # Case of end of the episode with fake performance (might be service)
-        elif (Performance.episode_end):
+        if (Performance.episode_end):
             print("end by physical conditions")
             self.get_logger().info('position reset by physical conditions')
             
             Performance.timestamp=self.get_clock().now().to_msg()
             Performance.loss=float(1e5) # Artificially setting high error
             
-            #self.episode_end=self.model_performance.episode_end
-            #print("setting end condition by physical bounds value ",str(Performance.episode_end))
-            #self.end_condition_val=Performance.episode_end
-            Performance.episode_end=Performance.episode_end
-            #self.end_condition_val=False
-            #self.loss_publisher.publish(Performance)
+            self.loss_publisher.publish(Performance)
 
             self.end_condition_val=False
             self.model_performance = None
@@ -148,7 +143,7 @@ class Objective_node(Node):
             #self.future = self.cli.call(self.req)
             #rclpy.spin_until_future_complete(self, self.future)
             self.end_condition_val=False
-            time.sleep(0.2)
+            #time.sleep(1.)
 
 
                 
