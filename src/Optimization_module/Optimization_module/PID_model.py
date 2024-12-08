@@ -29,7 +29,7 @@ class basic_PID_model(object):
         if len(X)>1:
             e_1=X[-2]
             self.Kp_term=self.Kp*e
-            self.Ie=self.Ki*self.Ie+e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
+            self.Ie=self.Ie+self.Ki*e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
             self.Kd_term=self.Kp*e
             self.Kd_term=self.Kp*(e-e_1)/self.T
             u = min(max(self.u_min,self.Kp_term+self.Ie+self.Kd_term),self.u_max)
@@ -44,7 +44,7 @@ class basic_PID_model(object):
         if len(X)>1:
             e_1=-(self.ref-X[-2])
             self.Kp_term=self.Kp*e
-            self.Ie=self.Ki*self.Ie+e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
+            self.Ie=self.Ie+self.Ki*e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
             self.Kd_term=self.Kp*e
             self.Kd_term=self.Kp*(e-e_1)/self.T
             #u = min(max(self.u_min,self.Kp_term+self.Ie+self.Kd_term),self.u_max)
@@ -58,7 +58,7 @@ class basic_PID_model(object):
         if len(X)>1:
             e_1=(self.ref-X[-2])
             self.Kp_term=self.Kp*e
-            self.Ie=self.Ki*self.Ie+e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
+            self.Ie=self.Ie+self.Ki*e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
             self.Kd_term=self.Kp*e
             self.Kd_term=self.Kp*(e-e_1)/self.T
             u = min(max(self.u_min,self.Kp_term+self.Ie+self.Kd_term),self.u_max)
@@ -71,7 +71,7 @@ class basic_PID_model(object):
         if len(X)>1:
             e_1=X[-2]
             self.Kp_term=self.Kp*e
-            self.Ie=self.Ki*self.Ie+e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
+            self.Ie=self.Ie+self.Ki*e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
             self.Kd_term=self.Kp*e
             self.Kd_term=self.Kp*(e-e_1)/self.T
             u = self.Kp_term+self.Ie+self.Kd_term

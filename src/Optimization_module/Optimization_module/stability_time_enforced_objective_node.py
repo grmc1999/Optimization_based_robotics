@@ -39,7 +39,8 @@ class Objective_node(Objective_node):
         # Objective definitin
         #self.objective_function=(lambda x,y:np.mean((np.array(x)-np.array(y))**2)) # Consider weight with time
         self.objective_function=(lambda x:np.sum(
-            ((np.array(x)-self.ref)**2)*(0.9**np.arange(np.array(x).shape[0])[::-1][int(-1*np.array(x).shape[0]):])
+            #((np.array(x)-self.ref)**2)*(0.9**np.arange(1e7)[::-1][int(-1*np.array(x).shape[0]):])
+            ((np.array(x)-self.ref)**2)*(0.9**np.arange(1e5)[::][:int(np.array(x).shape[0])])
             )
             ) # Consider weight with time
 
@@ -91,7 +92,7 @@ class Objective_node(Objective_node):
                     print(self.sensor_value)
             #if (self.position.pose.pose.position.x>5. or self.position.pose.pose.position.x<-5.):
                     print("Condition satis")
-                    self.cond_pose=self.position.pose.pose.position.x
+                    #self.cond_pose=self.position.pose.pose.position.x
                     print("episode end")
                     is_end=True
             
