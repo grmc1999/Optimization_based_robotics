@@ -81,12 +81,12 @@ class Objective_node(Node):
         
         #self.episode_end=self.model_performance.episode_end
         print("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
-        self.get_logger().info('position reset by end episode')
         #self.get_logger().info("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
         self.end_condition_val=self.model_performance.episode_end
         #Performance.episode_end=self.model_performance.episode_end
         Performance.episode_end=False
         self.loss_publisher.publish(Performance)
+        self.cond_pose=self.position.pose.pose.position.x
 
 #    def model_mode(self):
 #        self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
@@ -112,7 +112,6 @@ class Objective_node(Node):
         # Case of end of the episode with fake performance (might be service)
         if (Performance.episode_end):
             print("end by physical conditions")
-            self.get_logger().info('position reset by physical conditions')
             
             Performance.timestamp=self.get_clock().now().to_msg()
             Performance.loss=float(1e5) # Artificially setting high error
@@ -127,6 +126,7 @@ class Objective_node(Node):
         
 
         if self.end_condition_val:
+            
             
             self.req.entity.name="my_gpg" #TODO: add flexibility for parallel simulation
             self.req.entity.id=0

@@ -41,7 +41,7 @@ class PID_Model_node(Model_node):
 
         self.declare_parameter('selection_size',3)
         self.declare_parameter('sample_size',25)
-        self.declare_parameter('mutation_magnitude',0.1)
+        self.declare_parameter('mutation_magnitude',0.01)
         #self.declare_parameter('sample_size',3)
 
         #DEFINE  MODEL
@@ -49,7 +49,7 @@ class PID_Model_node(Model_node):
             Kp=0.1,
             Ki=0.1,
             Kd=0.1,
-            T=0.1,
+            T=0.01,
         )
 
         self.interface_topic_subscription = self.create_subscription(
@@ -59,6 +59,7 @@ class PID_Model_node(Model_node):
         # OPTIMIZATION PROCEDURES
         
         
+        self.generation_c=0
         self.samples_results=[]
         self.sample_size=25
         self.selection_size=3
@@ -116,6 +117,7 @@ class PID_Model_node(Model_node):
             print("parameters length")
             print(len(self.parameters))
             Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
+            self.get_logger().info('testing new individual')
             self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
             print("update function")
             self.update_function()
@@ -134,6 +136,8 @@ class PID_Model_node(Model_node):
 
         # genetic
         if len(self.samples_results)>self.sample_size:
+            self.generation_c=self.generation_c+1
+            self.get_logger().info('creating new generation number '+str(self.generation_c))
             self.prototypes_iter=0
             self.samples_results=np.array(self.samples_results)
             
