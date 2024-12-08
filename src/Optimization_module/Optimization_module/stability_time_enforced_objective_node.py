@@ -95,7 +95,7 @@ class Objective_node(Objective_node):
                     print("episode end")
                     is_end=True
             
-        self.end_condition_val=is_end
+        #self.end_condition_val=is_end
 
             
         return is_end

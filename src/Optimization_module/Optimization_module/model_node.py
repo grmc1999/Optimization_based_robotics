@@ -59,7 +59,7 @@ class Model_node(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.declare_parameter('mode',"train")
-        self.declare_parameter('batch_size',100)
+        self.declare_parameter('batch_size',1000)
         self.declare_parameter('model_topic',"opt_debug")
         # mode should be train, test, deploy
         # Assertion for defined modes
@@ -87,7 +87,7 @@ class Model_node(Node):
         """
         self.set_model_mode()
         self.input=msg
-        if len(self.data_batch)<self.batch_size and not(self.episode_end):
+        if len(self.data_batch)<self.batch_size:
             self.data_batch.append(self.input.value[0])
             self.state_batch.append(self.sensor_value)
         else:
