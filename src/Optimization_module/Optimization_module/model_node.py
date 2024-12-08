@@ -3,7 +3,7 @@ from rclpy.node import Node
 
 
 from ob_robotics_interface.msg import PerformanceData
-from ob_robotics_interface.msg import RobotModelInterface
+from ob_robotics_interface.msg import RobotModelMultiInterface
 from ob_robotics_interface.msg import OptimizationData
 
 
@@ -36,11 +36,11 @@ class Model_node(Node):
 
         # Environment interface
         self.input_subscription = self.create_subscription(
-            RobotModelInterface,'/model_input', # TODO: Check if this topic is remaped
+            RobotModelMultiInterface,'/model_input', # TODO: Check if this topic is remaped
             self.get_env_input,10)
         
         self.command_publisher = self.create_publisher(
-            RobotModelInterface,
+            RobotModelMultiInterface,
 		    'model_command', 
 		    10)
         
@@ -88,7 +88,7 @@ class Model_node(Node):
         self.set_model_mode()
         self.input=msg
         if len(self.data_batch)<self.batch_size and not(self.episode_end):
-            self.data_batch.append(self.input.value)
+            self.data_batch.append(self.input.value[0])
             self.state_batch.append(self.sensor_value)
         else:
             if self.model_mode!="deploy":
@@ -111,10 +111,11 @@ class Model_node(Node):
         self.set_model_mode()
         self.loss_input=msg
         self.episode_end=self.loss_input.episode_end
-        print("update function")
+        self.get_logger().info('update function loss ',self.loss_input.value)
+        #print("update function")
         self.update_function()
 
-        print("recieving episode condition: ",self.episode_end)
+        #print("recieving episode condition: ",self.episode_end)
         if self.loss_input.episode_end:
             self.data_batch=[]
             self.state_batch=[]
@@ -134,9 +135,9 @@ class Model_node(Node):
         if self.input!=None:
             model_out=getattr(self.model,self.model_mode)(self.data_batch)
 
-            model_output=RobotModelInterface()
+            model_output=RobotModelMultiInterface()
             model_output.timestamp=self.get_clock().now().to_msg()
-            model_output.value=model_out
+            model_output.value=[model_out]
             self.command_publisher.publish(model_output)
 
         # consider updating the model in an individual process
@@ -151,9 +152,9 @@ class Model_node(Node):
         
 
     def episode_end_routine(self):
-        model_output=RobotModelInterface()
+        model_output=RobotModelMultiInterface()
         model_output.timestamp=self.get_clock().now().to_msg()
-        model_output.value=np.random.uniform(0,1)
+        model_output.value=[np.random.uniform(0,1)]
 
         # consider updating the model in an individual process
         #if len(self.data_batch)<self.batch_size: # TODO add or end of episode

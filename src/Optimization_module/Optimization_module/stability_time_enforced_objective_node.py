@@ -39,7 +39,8 @@ class Objective_node(Objective_node):
         # Objective definitin
         #self.objective_function=(lambda x,y:np.mean((np.array(x)-np.array(y))**2)) # Consider weight with time
         self.objective_function=(lambda x:np.sum(
-            ((np.array(x)-self.ref)**2)*(0.9**np.arange(np.array(x).shape[0])[::-1]))
+            ((np.array(x)-self.ref)**2)*(0.9**np.arange(np.array(x).shape[0])[::-1][int(-1*np.array(x).shape[0]):])
+            )
             ) # Consider weight with time
 
         self.interface_topic_subscription = self.create_subscription(
@@ -79,12 +80,14 @@ class Objective_node(Objective_node):
         #if (self.position.pose.pose.position.x-self.cond_pose>5. or self.position.pose.pose.position.x-self.cond_pose<-5.):
         if self.position!=None:
             cond_array = [
-                self.position.pose.pose.position.x-self.cond_pose>1,
-                self.position.pose.pose.position.x-self.cond_pose<-1.,
+                self.position.pose.pose.position.x-self.cond_pose>0.5,
+                self.position.pose.pose.position.x-self.cond_pose<-0.5,
                 self.sensor_value>0.7,
                 self.sensor_value<-0.7
             ]
             if reduce(lambda a,b:a or b,cond_array):
+                    
+                    self.get_logger().info('physical conditions satisfied, episode condition is ended in objective node')
                     print(self.sensor_value)
             #if (self.position.pose.pose.position.x>5. or self.position.pose.pose.position.x<-5.):
                     print("Condition satis")

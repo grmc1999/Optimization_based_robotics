@@ -1,19 +1,19 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
-from geometry_msgs.msg import Twist,Pose2D,TwistStamped,PointStamped
-from turtlesim.msg import Pose
-from nav_msgs.msg import Odometry
-from tf_transformations import euler_from_quaternion
-import angles
-import numpy as np
-import math
-import tf2_ros
-import tf2_geometry_msgs
+#from std_msgs.msg import String
+#from geometry_msgs.msg import Twist,Pose2D,TwistStamped,PointStamped
+#from turtlesim.msg import Pose
+#from nav_msgs.msg import Odometry
+#from tf_transformations import euler_from_quaternion
+#import angles
+#import numpy as np
+#import math
+#import tf2_ros
+#import tf2_geometry_msgs
 
 #from ob_robotics_interface.msg import Performance_data
-from ob_robotics_interface.msg import RobotModelInterface
+from ob_robotics_interface.msg import RobotModelMultiInterface
 #from ob_robotics_interface.msg import Optimization_data
 
 #import rospy
@@ -40,16 +40,16 @@ class robot_interface_node(Node):
 
         # Environment interface
         self.input_publisher = self.create_publisher(
-            RobotModelInterface,'/model_input',
+            RobotModelMultiInterface,'/model_input',
             10)
         
         self.model_command_subscription = self.create_subscription(
-            RobotModelInterface,'model_command', # This subscription has to be set for every type of problem
+            RobotModelMultiInterface,'model_command', # This subscription has to be set for every type of problem
             self.get_model_command,1)
         
         # Optimization interface
         self.topic_subscription = self.create_subscription(
-            RobotModelInterface,'topic', # This subscription has to be set for every type of problem
+            RobotModelMultiInterface,'topic', # This subscription has to be set for every type of problem
             self.get_input,10)
         
         timer_period = 0.1  # seconds
@@ -66,9 +66,9 @@ class robot_interface_node(Node):
         data parsing and other stuff
         """
         # Transform model output for ros format
-        model_input=RobotModelInterface()
+        model_input=RobotModelMultiInterface()
         model_input.timestamp=self.get_clock().now().to_msg()
-        model_input.value=self.input
+        model_input.value=[self.input]
         
 
         self.input_publisher.publish(model_input)

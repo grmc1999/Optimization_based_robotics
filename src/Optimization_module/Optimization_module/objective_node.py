@@ -101,7 +101,9 @@ class Objective_node(Node):
                     ))
             
             #self.episode_end=self.model_performance.episode_end
-            print("setting end condition by model performance msg value ",self.model_performance.episode_end)
+            print("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
+            self.get_logger().info('position reset by end episode')
+            #self.get_logger().info("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
             self.end_condition_val=self.model_performance.episode_end
             #Performance.episode_end=self.model_performance.episode_end
             Performance.episode_end=False
@@ -110,17 +112,19 @@ class Objective_node(Node):
         # Case of end of the episode with fake performance (might be service)
         elif (Performance.episode_end):
             print("end by physical conditions")
+            self.get_logger().info('position reset by physical conditions')
             
             Performance.timestamp=self.get_clock().now().to_msg()
             Performance.loss=float(1e5) # Artificially setting high error
             
             #self.episode_end=self.model_performance.episode_end
-            print("setting end condition by physical bounds value ",Performance.episode_end)
+            #print("setting end condition by physical bounds value ",str(Performance.episode_end))
             #self.end_condition_val=Performance.episode_end
             Performance.episode_end=Performance.episode_end
-            self.loss_publisher.publish(Performance)
-
             #self.end_condition_val=False
+            #self.loss_publisher.publish(Performance)
+
+            self.end_condition_val=False
             self.model_performance = None
         
 

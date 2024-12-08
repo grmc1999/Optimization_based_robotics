@@ -8,7 +8,7 @@ import numpy as np
 from tf_transformations import euler_from_quaternion
 
 #from ob_robotics_interface.msg import Performance_data
-from ob_robotics_interface.msg import RobotModelInterface
+from ob_robotics_interface.msg import RobotModelMultiInterface
 #from ob_robotics_interface.msg import Optimization_data
 
 from .proxy_node import robot_interface_node
@@ -40,7 +40,7 @@ class IMU_proxy_node(robot_interface_node):
         self.input=msg
 
         if self.input!=None:
-            model_input=RobotModelInterface()
+            model_input=RobotModelMultiInterface()
 
             model_input.timestamp=self.get_clock().now().to_msg()
             orientation=euler_from_quaternion([
@@ -50,7 +50,7 @@ class IMU_proxy_node(robot_interface_node):
 		            self.input.orientation.w
                     ])
             print(orientation)
-            model_input.value=float(orientation[1])
+            model_input.value=[float(orientation[1])]
 
             self.input_publisher.publish(model_input)
 
@@ -61,7 +61,7 @@ class IMU_proxy_node(robot_interface_node):
         # Transform model output for ros format
 #
         #if self.input!=None:
-        #    model_input=RobotModelInterface()
+        #    model_input=RobotModelMultiInterface()
 #
         #    model_input.timestamp=self.get_clock().now().to_msg()
         #    orientation=euler_from_quaternion([
@@ -80,7 +80,7 @@ class IMU_proxy_node(robot_interface_node):
             v_u=TwistStamped()
             v_u.header.stamp=self.get_clock().now().to_msg()
             v_u.header.frame_id="base_link"
-            v_u.twist.linear.x=self.model_command.value
+            v_u.twist.linear.x=self.model_command.value[0]
             self.command_publisher.publish(v_u)
 
 

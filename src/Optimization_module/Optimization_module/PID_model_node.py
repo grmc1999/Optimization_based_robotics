@@ -122,7 +122,7 @@ class PID_Model_node(Model_node):
                 Performance.robot_state=self.state_batch
                 Performance.episode_end=False
                 self.model_output_publisher.publish(Performance)
-            self.data_batch=[self.input.value]
+            self.data_batch=[0]
             self.state_batch=[self.sensor_value]
         
 
@@ -147,6 +147,7 @@ class PID_Model_node(Model_node):
             
             print("best params")
             print(self.samples_results)
+            #self.get_logger().info(self.samples_results)
             # create new NxNxN
             best_params=self.samples_results[:,0]
             best_params=np.array(list(map(lambda d: list(d.values()),best_params)))
