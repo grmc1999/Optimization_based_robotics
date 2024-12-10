@@ -59,8 +59,8 @@ class Model_node(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.declare_parameter('mode',"train")
-        self.declare_parameter('batch_size',1000)
-        self.declare_parameter('model_topic',"opt_debug")
+        #self.declare_parameter('batch_size',1000)
+        #self.declare_parameter('model_topic',"opt_debug")
         # mode should be train, test, deploy
         # Assertion for defined modes
 
@@ -87,20 +87,30 @@ class Model_node(Node):
         """
         self.set_model_mode()
         self.input=msg
-        if len(self.data_batch)<self.batch_size:
-            self.data_batch.append(self.input.value[0])
-            self.state_batch.append(self.sensor_value)
-        else:
-            if self.model_mode!="deploy":
-                # Send information related to performance
-                # TODO ADD timestamp
-                Performance=PerformanceData()
-                Performance.model_values=self.data_batch
-                Performance.robot_state=self.state_batch
-                Performance.episode_end=True
-                self.model_output_publisher.publish(Performance)
-            self.data_batch=[0]
-            self.state_batch=[self.sensor_value]
+
+        # VERIFY IF BATCH IS COMPLETE
+        #if len(self.data_batch)<self.batch_size:
+        #    self.data_batch.append(self.input.value[0])
+        #    self.state_batch.append(self.sensor_value)
+        #else:
+        #    if self.model_mode!="deploy":
+        #        # Send information related to performance
+        #        # TODO ADD timestamp
+        #        Performance=PerformanceData()
+        #        Performance.model_values=self.data_batch
+        #        Performance.robot_state=self.state_batch
+        #        Performance.episode_end=True
+        #        self.model_output_publisher.publish(Performance)
+        #    self.data_batch=[0]
+        #    self.state_batch=[self.sensor_value]
+
+        PD=PerformanceData()
+        PD.timestamp=self.get_clock().now().to_msg()
+        PD.model_values=[self.input.value[0]]
+        PD.robot_state=[self.sensor_value]
+        PD.episode_end=False
+        self.model_output_publisher.publish(PD)
+
     
     def get_optimization_input(self,msg):
         """
@@ -116,14 +126,14 @@ class Model_node(Node):
         self.update_function()
 
         #print("recieving episode condition: ",self.episode_end)
-        if self.loss_input.episode_end:
-            self.data_batch=[]
-            self.state_batch=[]
+        #if self.loss_input.episode_end:
+        #    self.data_batch=[]
+        #    self.state_batch=[]
 
     def set_model_mode(self):
         self.model_mode=str(self.get_parameter('mode').get_parameter_value().string_value)
-        self.model_topic=str(self.get_parameter('model_topic').get_parameter_value().string_value)
-        self.batch_size=int(self.get_parameter('batch_size').get_parameter_value().integer_value)
+        #self.model_topic=str(self.get_parameter('model_topic').get_parameter_value().string_value)
+        #self.batch_size=int(self.get_parameter('batch_size').get_parameter_value().integer_value)
 
     def update_function(self,model):
         return model
@@ -133,7 +143,7 @@ class Model_node(Node):
         self.set_model_mode()
 
         if self.input!=None:
-            model_out=getattr(self.model,self.model_mode)(self.data_batch)
+            model_out=getattr(self.model,self.model_mode)(self.input.value[0])
 
             model_output=RobotModelMultiInterface()
             model_output.timestamp=self.get_clock().now().to_msg()

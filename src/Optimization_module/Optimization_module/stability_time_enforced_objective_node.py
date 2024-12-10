@@ -92,7 +92,7 @@ class Objective_node(Objective_node):
                     print(self.sensor_value)
             #if (self.position.pose.pose.position.x>5. or self.position.pose.pose.position.x<-5.):
                     print("Condition satis")
-                    #self.cond_pose=self.position.pose.pose.position.x
+                    self.cond_pose=self.position.pose.pose.position.x
                     print("episode end")
                     is_end=True
             
