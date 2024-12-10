@@ -102,33 +102,33 @@ class PID_Model_node(Model_node):
         self.loss_input=msg
         self.episode_end=self.loss_input.episode_end
 
-        print("recieving episode condition: ",self.episode_end)
-        if self.loss_input.episode_end:
-            if self.model_mode!="deploy":
-                # Send information related to performance
-                # TODO ADD timestamp
-                Performance=PerformanceData()
-                Performance.model_values=self.data_batch
-                Performance.robot_state=self.state_batch
-                Performance.episode_end=True
-                self.model_output_publisher.publish(Performance)
-            self.data_batch=[0]
-            self.state_batch=[self.sensor_value]
-        else:
-            # OPTIMIZATION PROCEDURES
-            sampling_result=[
-                self.model.parameters,
-                self.loss_input.loss
-                ]
-            self.samples_results.append(sampling_result)
-            print("parameters length")
-            print(len(self.parameters))
-            Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
-            self.get_logger().info('individual score: '+str(self.loss_input.loss)+', setting new individual')
-            self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
-            print("update function")
-            self.update_function()
-            self.prototypes_iter=self.prototypes_iter+1
+        #print("recieving episode condition: ",self.episode_end)
+        #if self.loss_input.episode_end:
+        #    if self.model_mode!="deploy":
+        #        # Send information related to performance
+        #        # TODO ADD timestamp
+        #        Performance=PerformanceData()
+        #        Performance.model_values=self.data_batch
+        #        Performance.robot_state=self.state_batch
+        #        Performance.episode_end=True
+        #        self.model_output_publisher.publish(Performance)
+        #    self.data_batch=[0]
+        #    self.state_batch=[self.sensor_value]
+        #else:
+        ## OPTIMIZATION PROCEDURES
+        sampling_result=[
+            self.model.parameters,
+            self.loss_input.loss
+            ]
+        self.samples_results.append(sampling_result)
+        print("parameters length")
+        print(len(self.parameters))
+        Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
+        self.get_logger().info('individual score: '+str(self.loss_input.loss)+', setting new individual')
+        self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
+        print("update function")
+        self.update_function()
+        self.prototypes_iter=self.prototypes_iter+1
         
 
     def set_optimization_params(self):

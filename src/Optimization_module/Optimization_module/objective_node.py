@@ -58,8 +58,17 @@ class Objective_node(Node):
 
         #self.episode_end=False
         self.end_condition_val=False
+        self.declare_parameter('batch_size',1000)
 
+        self.data_batch=[]
+        self.state_batch=[]
+        self.set_params()
 
+    def set_params(self):
+        #self.model_mode=str(self.get_parameter('mode').get_parameter_value().string_value)
+        #self.model_topic=str(self.get_parameter('model_topic').get_parameter_value().string_value)
+        self.batch_size=int(self.get_parameter('batch_size').get_parameter_value().integer_value)
+    
     def get_performance(self,msg):
         """
         Performance structure
@@ -69,32 +78,47 @@ class Objective_node(Node):
         Processed_data.episode_end -> bool
         """
         self.model_performance=msg
-        Performance=OptimizationData()
 
-        print("recieved model performance")
-        # Add size before update
-        self.model_performance.robot_state
-        Performance.timestamp=self.get_clock().now().to_msg()
-        Performance.loss=float(self.objective_function(
-                self.model_performance.robot_state
-                ))
+        if len(self.data_batch)<self.batch_size:
+            print("observing model values")
+            print(self.model_performance.model_values)
+            #self.get_logger().info(self.model_performance.model_values)
+            self.data_batch.append(self.model_performance.model_values[0])
+            self.state_batch.append(self.model_performance.robot_state[0])
+        else:
+            #if self.model_mode!="deploy":
+                # Send information related to performance
+                # TODO ADD timestamp
+                #Performance=PerformanceData()
+                #Performance.model_values=self.data_batch
+                #Performance.robot_state=self.state_batch
+                #Performance.episode_end=True
+                #self.model_output_publisher.publish(Performance)
+            self.model_performance.robot_state
+            Performance=OptimizationData()
+            Performance.timestamp=self.get_clock().now().to_msg()
+            Performance.loss=float(self.objective_function(self.state_batch))
+            Performance.episode_end=True
+            self.loss_publisher.publish(Performance)
+            self.end_condition_val=True
+
+            self.data_batch=[0]
+            self.state_batch=[0]
+
         
-        #self.episode_end=self.model_performance.episode_end
-        print("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
-        #self.get_logger().info("setting end condition by model performance msg value ",str(self.model_performance.episode_end))
-        self.end_condition_val=self.model_performance.episode_end
-        #Performance.episode_end=self.model_performance.episode_end
-        Performance.episode_end=False
-        self.loss_publisher.publish(Performance)
-        self.cond_pose=self.position.pose.pose.position.x
-
-#    def model_mode(self):
-#        self.model_mode=str(self.get_parameter('mode').get_parameter_value().string)
+        # Add size before update
+        #self.model_performance.robot_state
+        #Performance.timestamp=self.get_clock().now().to_msg()
+        #Performance.loss=float(self.objective_function(
+        #        self.model_performance.robot_state
+        #        ))
+        #
+        #self.end_condition_val=self.model_performance.episode_end
+        #Performance.episode_end=False
+        #self.loss_publisher.publish(Performance)
+        #self.cond_pose=self.position.pose.pose.position.x
 
     def check_end_condition(self):
-        
-
-        #self.req.
 
         return False
     
@@ -105,21 +129,25 @@ class Objective_node(Node):
         Processed_data.loss -> float32
         Processed_data.episode_end -> bool
         """
-        Performance=OptimizationData()
+        
         # Check end of the episode
-        Performance.episode_end=self.check_end_condition()
+        #Performance.episode_end=
+        self.set_params()
         
         # Case of end of the episode with fake performance (might be service)
-        if (Performance.episode_end):
-            print("end by physical conditions")
-            
+        if self.check_end_condition():
+            Performance=OptimizationData()
             Performance.timestamp=self.get_clock().now().to_msg()
-            Performance.loss=float(1e5) # Artificially setting high error
-            
+            Performance.loss=float(self.objective_function(self.state_batch))
+            Performance.episode_end=True
             self.loss_publisher.publish(Performance)
+            self.end_condition_val=True
 
-            self.end_condition_val=False
-            self.model_performance = None
+            self.data_batch=[0]
+            self.state_batch=[0]
+
+            #self.end_condition_val=False
+            #self.model_performance = None
         
 
         
