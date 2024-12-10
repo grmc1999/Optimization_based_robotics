@@ -40,7 +40,7 @@ class Objective_node(Objective_node):
         #self.objective_function=(lambda x,y:np.mean((np.array(x)-np.array(y))**2)) # Consider weight with time
         self.objective_function=(lambda x:np.sum(
             #((np.array(x)-self.ref)**2)*(0.9**np.arange(1e7)[::-1][int(-1*np.array(x).shape[0]):])
-            ((np.array(x)-self.ref)**2)*(0.9**np.arange(1e5)[::][:int(np.array(x).shape[0])])
+            ((np.array(x)-self.ref)**2)*(0.7**np.arange(1e5)[::][:int(np.array(x).shape[0])])
             )
             ) # Consider weight with time
 
