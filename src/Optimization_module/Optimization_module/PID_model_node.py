@@ -5,6 +5,7 @@ from .model_node import Model_node
 
 from .PID_model import basic_PID_model
 from sensor_msgs.msg import Imu
+from std_msgs.msg import Float64
 from tf_transformations import euler_from_quaternion
 
 from ob_robotics_interface.msg import PerformanceData
@@ -41,7 +42,7 @@ class PID_Model_node(Model_node):
 
         self.declare_parameter('selection_size',3)
         self.declare_parameter('sample_size',25)
-        self.declare_parameter('mutation_magnitude',0.01)
+        self.declare_parameter('mutation_magnitude',10.)
         #self.declare_parameter('sample_size',3)
 
         #DEFINE  MODEL
@@ -55,6 +56,11 @@ class PID_Model_node(Model_node):
         self.interface_topic_subscription = self.create_subscription(
             Imu,'/imu', # This subscription has to be set for every type of problem
             self.get_sensor_input,1)
+        
+        self.mean_loss_publisher = self.create_publisher(
+            Float64,
+		    'optimization_result',
+		    10)
 
         # OPTIMIZATION PROCEDURES
         
@@ -66,12 +72,13 @@ class PID_Model_node(Model_node):
         self.prototypes_iter=0
         
 
-        self.parameters=np.random.uniform(0,2,(self.sample_size+2,3))
+        self.parameters=np.random.uniform(0,1,(self.sample_size+2,3))
 
         Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
         
         self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
         self.sensor_value=0
+        self.best_losses=[]
 
         
 
@@ -117,7 +124,7 @@ class PID_Model_node(Model_node):
             print("parameters length")
             print(len(self.parameters))
             Kp,Ki,Kd=tuple(self.parameters[self.prototypes_iter])
-            self.get_logger().info('testing new individual')
+            self.get_logger().info('individual score: '+str(self.loss_input.loss)+', setting new individual')
             self.model.update_parameters({"Kp":Kp,"Ki":Ki,"Kd":Kd})
             print("update function")
             self.update_function()
@@ -144,6 +151,14 @@ class PID_Model_node(Model_node):
             self.samples_results=self.samples_results[np.argsort(self.samples_results[:,1])[:(int(self.selection_size))]]
 
             loss_mean=np.mean(self.samples_results[:,1])
+
+            self.get_logger().info('best past generation scores '+str(loss_mean))
+
+            self.best_losses.append(loss_mean)
+
+            d=Float64()
+            d.data=loss_mean
+            self.mean_loss_publisher.publish(d)
             
             print("best params")
             print(self.samples_results)

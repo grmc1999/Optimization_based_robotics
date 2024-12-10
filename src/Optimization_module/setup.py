@@ -11,6 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name, ['launch/evolution_based_optimizer_PID_tunner.launch.py']),
+        ('share/' + package_name, ['launch/env_optimizer_PID_tunner.launch.py'])
     ],
     install_requires=['setuptools'],
     zip_safe=True,

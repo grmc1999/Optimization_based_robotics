@@ -139,30 +139,15 @@ class Model_node(Node):
             model_output.timestamp=self.get_clock().now().to_msg()
             model_output.value=[model_out]
             self.command_publisher.publish(model_output)
-
-        # consider updating the model in an individual process
-        #if len(self.data_batch)<self.batch_size: # TODO add or end of episode
-
-        # UPDATE SHOULD RUN IF THERE IS NEW LOSS ON BATCH SIZE
-        #if self.loss_input!=None:
-            
-            #run model update
-            
         
         
 
     def episode_end_routine(self):
-        model_output=RobotModelMultiInterface()
-        model_output.timestamp=self.get_clock().now().to_msg()
-        model_output.value=[np.random.uniform(0,1)]
 
-        # consider updating the model in an individual process
-        #if len(self.data_batch)<self.batch_size: # TODO add or end of episode
         if self.loss_input!=None:
             #run model update
             self.update_function()
-        
-        #self.command_publisher.publish(model_output)
+    
         self.episode_end=False
 
     def timer_callback(self):

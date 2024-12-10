@@ -54,9 +54,9 @@ class basic_PID_model(object):
         return u
     
     def test(self,X):
-        e=(self.ref-X[-1])
+        e=-(self.ref-X[-1])
         if len(X)>1:
-            e_1=(self.ref-X[-2])
+            e_1=-(self.ref-X[-2])
             self.Kp_term=self.Kp*e
             self.Ie=self.Ie+self.Ki*e*self.T # + self.Kaw*(self.command_sat_prev - self.command_prev)*self.T
             self.Kd_term=self.Kp*e
@@ -67,7 +67,7 @@ class basic_PID_model(object):
         return u
     
     def deploy(self,X):
-        e=(self.ref-X[-1])
+        e=-(self.ref-X[-1])
         if len(X)>1:
             e_1=X[-2]
             self.Kp_term=self.Kp*e
